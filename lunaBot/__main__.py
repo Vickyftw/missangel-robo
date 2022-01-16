@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-SCILENTZ_IMG = "https://telegra.ph/file/f31af856c345e00513c36.mp4"
+LUNA_IMG = "https://telegra.ph/file/f31af856c345e00513c36.mp4"
 
 PM_START_TEXT = """
 `𝗛𝗲𝘆, 𝗜 𝗮𝗺 𝗦𝗰𝗶𝗹𝗲𝗻𝘁𝗭 𝗥𝗼𝗯𝗼「⚜️」 [😎](https://telegra.ph/file/f31af856c345e00513c36.mp4)
