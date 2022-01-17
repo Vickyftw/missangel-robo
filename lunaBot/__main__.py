@@ -107,9 +107,9 @@ HELP_STRINGS = """
 
 
 
-DONATE_STRING = """Hehe, glad to hear you'd like to donate!"""
+DONATE_STRING = """Hehe, glad to hear you'd like to donate!
  [Dead😳](https://t.me/HYPER_AD13) ❤️
-
+"""
 
 IMPORTED = {}
 MIGRATEABLE = []
