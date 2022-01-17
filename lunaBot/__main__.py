@@ -106,11 +106,6 @@ HELP_STRINGS = """
 ❂ /help: `Sends this message; I'll tell you more about myself.`
 
 
-
-DONATE_STRING = """Hehe, glad to hear you'd like to donate!
- [Dead😳](https://t.me/HYPER_AD13) ❤️
-"""
-
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
