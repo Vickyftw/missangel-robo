@@ -107,7 +107,7 @@ HELP_STRINGS = """
 
 
 
-DONATE_STRING = """ʜᴇʜᴇ ᴡᴀɴᴛ ᴛᴏ ᴅᴏɴᴀᴛᴇ
+DONATE_STRING = """U Can Donate Here 🤭
  [Dead😳](https://t.me/HYPER_AD13) ❤️"""
 
 IMPORTED = {}
