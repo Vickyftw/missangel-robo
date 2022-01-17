@@ -84,7 +84,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ Add ScilentZ To Your group ➕", url="http://t.me/SCILENTZ_BOT?startgroup=true"),
+        InlineKeyboardButton(text="➕ Add Scilentz To Your group ➕", url="http://t.me/SCILENTZ_BOT?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="luna_"),
@@ -102,16 +102,13 @@ buttons = [
 
 HELP_STRINGS = """
 **Main commands:**
-❂ /start: Starts me! You've probably already used this.
-❂ /help: Sends this message; I'll tell you more about myself.
-
-All commands can either be used with / or !.
-If you want to report any bugs or need any help with setting up Alina, reach us at here"""
+❂ /start: `Starts me! You've probably already used this.`
+❂ /help: `Sends this message; I'll tell you more about myself.`
 
 
 
-DONATE_STRING = """Hehe, senang mendengar Anda ingin menyumbang!
- [klick disini](https://t.me/zeinzo_1) ❤️
+DONATE_STRING = """ʜᴇʜᴇ ᴡᴀɴᴛ ᴛᴏ ᴅᴏɴᴀᴛᴇ
+ [Dead😳](https://t.me/HYPER_AD13) ❤️
 """
 
 IMPORTED = {}
@@ -227,7 +224,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/lunaXresso")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/SCILENCE_SUPPORT")]]
             ),
         )
         
