@@ -108,8 +108,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """ʜᴇʜᴇ ᴡᴀɴᴛ ᴛᴏ ᴅᴏɴᴀᴛᴇ
- [Dead😳](https://t.me/HYPER_AD13) ❤️
-"""
+ [Dead😳](https://t.me/HYPER_AD13) ❤️"""
 
 IMPORTED = {}
 MIGRATEABLE = []
