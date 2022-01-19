@@ -105,6 +105,11 @@ HELP_STRINGS = """
 ❂ /start: `Starts me! You've probably already used this.`
 ❂ /help: `Sends this message; I'll tell you more about myself.`
 
+DONATE_STRING = """Hehe, senang mendengar Anda ingin menyumbang!
+ [klick disini](https://t.me/zeinzo_1) ❤️
+"""
+
+
 
 IMPORTED = {}
 MIGRATEABLE = []
