@@ -390,15 +390,18 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_basichelp":
         query.message.edit_text(
-            text=f"Umm Do You Want To see My Father!! LOL..",
+            text=f"Umm Do You Want To see My Father && Mother !! LOL..",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Dudu", url="https://t.me/Itsme_Dream_AD_1713"),
-                    InlineKeyboardButton(text="Bubu", url="https://t.me/CODER_DEV13"),
+                    InlineKeyboardButton(text="ᴅᴜᴅᴜ❤️", url="https://t.me/Itsme_Dream_AD_1713"),
+                    InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/CODER_DEV13"),
                  ],
+                 [
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back"),
+                 ]
                 ],
             ),
         )
