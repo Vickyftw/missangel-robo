@@ -402,7 +402,7 @@ def luna_about_callback(update, context):
                 ],
             ),
         )
-    '''elif query.data == "luna_admin":
+    elif query.data == "luna_admin":
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──**"
             f"\n\n/play (song name) - play song from youtube"
@@ -479,7 +479,7 @@ def luna_about_callback(update, context):
                 ]
             ),
         )
-'''
+        
     elif query.data == "luna_aselole":
         query.message.edit_text(
             text=f"｢ Setup Guide 」\n"
