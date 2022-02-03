@@ -399,6 +399,7 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="Dudu", url="https://t.me/Itsme_Dream_AD_1713"),
                     InlineKeyboardButton(text="Bubu", url="https://t.me/CODER_DEV13"),
                  ],
+                ],
             ),
         )
     '''elif query.data == "luna_admin":
