@@ -89,7 +89,7 @@ buttons = [
     [
         InlineKeyboardButton(text="About", callback_data="luna_"),
         InlineKeyboardButton(
-            text="Music Player", callback_data="luna_basichelp"
+            text="Owner^", callback_data="luna_basichelp"
         ),
     ],
     [
@@ -106,7 +106,7 @@ HELP_STRINGS = """
 ❂ /help: `Sends this message; I'll tell you more about myself.`
 """
 
-DONATE_STRING = """Hehe, senang mendengar Anda ingin menyumbang![klick disini](https://t.me/zeinzo_1)"""
+DONATE_STRING = """[My Mumma](https://t.me/sprinkles_17)"""
 
 
 
@@ -390,32 +390,18 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_basichelp":
         query.message.edit_text(
-            text=f"**──「 Basic Guide 」──**"
-            f"\n\n1.) first, add me to your group.\n"
-            f"2.) then promote me as admin and give all permissions except anonymous admin.\n"
-            f"3.) after promoting me, type /reload in group to update the admin list.\n"
-            f"4.) add @LunaAssistant to your group or type /join to invite her.\n"
-            f"5.) turn on the video chat first before start to play music.\n"
-            f"\n📌 if userbot doesn't join voice chat make sure voice chat is active, or type /leave then type /join again..",
+            text=f"Umm Do You Want To see My Father!! LOL..",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📗 Basic CMD", callback_data="luna_admin"),
-                    InlineKeyboardButton(text="📘 Advanced CMD", callback_data="luna_notes"),
+                    InlineKeyboardButton(text="Dudu", url="https://t.me/Itsme_Dream_AD_1713"),
+                    InlineKeyboardButton(text="Bubu", url="https://t.me/CODER_DEV13),
                  ],
-                 [
-                    InlineKeyboardButton(text="📙 Admin CMD", callback_data="luna_support"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Back", callback_data="luna_back"),
-                 
-                 ]
-                ]
             ),
         )
-    elif query.data == "luna_admin":
+    '''elif query.data == "luna_admin":
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──**"
             f"\n\n/play (song name) - play song from youtube"
@@ -492,7 +478,7 @@ def luna_about_callback(update, context):
                 ]
             ),
         )
-
+'''
     elif query.data == "luna_aselole":
         query.message.edit_text(
             text=f"｢ Setup Guide 」\n"
