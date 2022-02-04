@@ -74,13 +74,13 @@ def get_readable_time(seconds: int) -> str:
 
 LUNA_IMG = "https://telegra.ph/file/f31af856c345e00513c36.mp4"
 
-PM_START_TEXT = f"""
-𝗛𝗲𝘆 {m.from_user.mention} !, `𝗜 𝗮𝗺 ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」` [😎](https://telegra.ph/file/f31af856c345e00513c36.mp4)
+PM_START_TEXT = (f'''
+𝗛𝗲𝘆 {m.from_user.mention} !, 𝗜 𝗮𝗺 ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」[😎](https://telegra.ph/file/f31af856c345e00513c36.mp4)
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
 ️●───────❚❚───────●
 ☉ **𝗖𝗹𝗶𝗰𝗸 𝗧𝗵𝗲 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗚𝗶𝘃𝗲𝗻 𝗕𝗲𝗹𝗼𝘄 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
-"""
+''')
 
 buttons = [
     [
