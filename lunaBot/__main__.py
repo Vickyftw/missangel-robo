@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 LUNA_IMG = "https://telegra.ph/file/f31af856c345e00513c36.mp4"
 
 PM_START_TEXT = """
-`𝗛𝗲𝘆, 𝗜 𝗮𝗺 𝗦𝗰𝗶𝗹𝗲𝗻𝘁𝗭 𝗥𝗼𝗯𝗼「⚜️」` [😎](https://telegra.ph/file/f31af856c345e00513c36.mp4)
+`𝗛𝗲𝘆 {m.from_user.mention} !, 𝗜 𝗮𝗺 ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」` [😎](https://telegra.ph/file/f31af856c345e00513c36.mp4)
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
 ️●───────❚❚───────●
@@ -84,7 +84,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ Add Scilentz To Your group ➕", url="http://t.me/SCILENTZ_BOT?startgroup=true"),
+        InlineKeyboardButton(text="➕ Add Scilentz To Your group ➕", url="http://t.me/DEVU_ROBOT?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="luna_"),
