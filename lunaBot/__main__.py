@@ -395,6 +395,7 @@ def luna_about_callback(update, context):
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="help_back"),
                  ]
+                 ]
                 ],
             ),
         )
