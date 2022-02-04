@@ -79,23 +79,18 @@ PM_START_TEXT = (f'''
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
 ️●───────❚❚───────●
-☉ **𝗖𝗹𝗶𝗰𝗸 𝗧𝗵𝗲 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗚𝗶𝘃𝗲𝗻 𝗕𝗲𝗹𝗼𝘄 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
+☉ **𝗖𝗹𝗶𝗰𝗸 /help or !help 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
 ''')
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ Add Scilentz To Your group ➕", url="http://t.me/DEVU_ROBOT?startgroup=true"),
+        InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.!! ➕", url="http://t.me/DEVU_ROBOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="luna_"),
+        InlineKeyboardButton(text="❇️ᴀʙᴏᴜᴛ ᴍᴇ❇️", callback_data="luna_"),
         InlineKeyboardButton(
-            text="Owner^", callback_data="luna_basichelp"
+            text="�ᴅᴇᴠs && ʜᴇʟᴘ�", callback_data="luna_basichelp"
         ),
-    ],
-    [
-        
-        InlineKeyboardButton(
-            text="❓ Help&Commands", callback_data="help_back"),
     ],
 ]
 
@@ -103,7 +98,6 @@ buttons = [
 HELP_STRINGS = """
 **Main commands:**
 ❂ /start: `Starts me! You've probably already used this.`
-❂ /help: `Sends this message; I'll tell you more about myself.`
 """
 
 DONATE_STRING = """[My Mumma](https://t.me/sprinkles_17)"""
@@ -369,10 +363,7 @@ def luna_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Setup Guide", callback_data="luna_aselole"
-                        ),
-                        InlineKeyboardButton(
-                            text="T & C", callback_data="luna_puqi"
+                            text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/SCILENT_BOT"
                         ),
                     ],
                     [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="luna_back")],
@@ -390,7 +381,7 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_basichelp":
         query.message.edit_text(
-            text=f"Umm Do You Want To see My Father && Mother !! LOL..",
+            text=f'''ᴜᴍᴍ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴇ ᴍʏ ꜰᴀᴛʜᴇʀ && ᴍᴏᴛʜᴇʀ !! ʟᴏʟ. \n\nʜᴇʀᴇ ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ \n\nꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏ ʜᴇʀᴇ .!!''',
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -399,8 +390,10 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="ᴅᴜᴅᴜ❤️", url="https://t.me/Itsme_Dream_AD_1713"),
                     InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/CODER_DEV13"),
                  ],
+                  [
+                    InlineKeyboardButton(text="ʜᴇʟᴘ&&ᴍᴏᴅᴜʟᴇs", callback_data="luna_help"
                  [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="help_back"),
                  ]
                 ],
             ),
