@@ -391,10 +391,10 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/CODER_DEV13"),
                  ],
                   [
-                    InlineKeyboardButton(text="ʜᴇʟᴘ&&ᴍᴏᴅᴜʟᴇs", callback_data="luna_help"
+                    InlineKeyboardButton(text="ʜᴇʟᴘ&&ᴍᴏᴅᴜʟᴇs", callback_data="luna_help"),
+                  ]
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="help_back"),
-                 ]
                  ]
                 ],
             ),
