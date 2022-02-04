@@ -3,11 +3,14 @@ import traceback
 from lunaBot import pbot as app
 from lunaBot.utils.inlinefuncs import *
 
-__mod_name__ = "Inline"
+__mod_name__ = "ɪɴʟɪɴᴇ"
 __help__ = """
 commands can be used by anyone in a group via inline.
 
-Usage: @lunatapibot <func> <query>"""
+Usage: @DEVU_ROBOT <func> <query>
+
+**THIS MODULE WILL START SOON,\n AFTER FINISHING MY STUDIES**
+"""
 
 
 @app.on_inline_query()
