@@ -73,10 +73,10 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Luna ai already activated in this chat")
+            await lel.edit("Devu ai already activated in this chat")
             return
         await lel.edit(
-            f"Luna ai successfully added for users in the chat {message.chat.id}"
+            f"Devu ai successfully added for users in the chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
@@ -86,7 +86,7 @@ async def hmm(_, message):
             await lel.edit("Luna ai was not activated in this chat")
             return
         await lel.edit(
-            f"Luna ai successfully deactivated for users in the chat {message.chat.id}"
+            f"Devu ai successfully deactivated for users in the chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -355,10 +355,10 @@ async def inuka(client, message):
 
 
 __help__ = """
-• Luna is the only ai system which can detect & reply upto 200 language's
+• Devu is the only ai system which can detect & reply upto 200 language's
 
 ✪ /chatbot ON/OFF: Enables and disables AI Chat mode.
 ✪ /chatbot EN : Enables English only chatbot.
 """
 
-__mod_name__ = "Chatbot"
+__mod_name__ = "ᴄʜᴀᴛʙᴏᴛ"
