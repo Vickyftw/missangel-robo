@@ -209,15 +209,13 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_LOGO, caption= "☆ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\n☆「ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ꜰᴏʀ ᴍᴏʀᴇ ᴍᴏᴅᴜʟᴇʀ ʜᴇʟᴘ\nᴘʀᴇss ᴏɴ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.!!」".format(
+            START_LOGO, caption= "☆ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\n☆".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/SCILENCE_SUPPORT")]
-                    [InlineKeyboardButton(text="ɢᴏ ᴛᴏ ᴍʏ ᴘᴍ👉", url="http://t.me/DEVU_ROBOT?start=help")]
-                ]
+                    [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/SCILENCE_SUPPORT")]]
             ),
         )
         
