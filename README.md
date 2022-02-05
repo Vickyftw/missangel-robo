@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <video src="https://telegra.ph/file/a63ec5e9ccd0baf459a75.mp4">
+  <img src="https://telegra.ph/file/7cc64ca5a008d6982474d.png">
 <h1 align="center"><b> 𝗗𝗲𝘃𝘂 𝗥𝗼𝗯𝗼𝘁.! </b></h1>
 
 ### DEPLOY TO HEROKU⤵️
