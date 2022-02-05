@@ -391,7 +391,8 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/HYPER_AD17"),
                  ],
                  [  
-                    InlineKeyboardButton(text="🚸ʜᴇʟᴘ&&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
+                    InlineKeyboardButton(text="🚸ʜᴇʟᴘ&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back")
+                    InlineKeyboardButton(text="💘ᴅᴇᴠᴜ ᴍᴜsɪᴄ💟", callback_data="luna_notes"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
@@ -404,11 +405,11 @@ def luna_about_callback(update, context):
             text=f"**──「 Basic Guide 」──**"
             f"\n\n/play (song name) - play song from youtube"
             f"\n/ytp (song name) - play song directly from"
-            f"\nB/stream (reply to audio) - play song using audio file."
             f"\n/playlist - show the list song in queue"
             f"\n/song (song name) - download song from youtube."
             f"\n/search (video name) - search video from youtube detailed."
-            f"\n/lyric - (song name) lyrics scrapper",
+            f"\n/video (video title) - download video music from youtube."
+            f"\n/alive - check bot is alive or not (fun cmd for user)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -418,15 +419,16 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_notes":
         query.message.edit_text(
-            text=f"──「 Advanced CMD 」──\n\n"
-            f"/start (in group) - see the bot alive status"
-            f"\n/reload - reload bot and refresh the admin list"
-            f"\n/ping - check the bot ping status"
-            f"\n/uptime - check the bot uptime status"
-            f"\n/id - show the group/user id & other",
+            text=f"ʜᴇʏ!, ɪ ᴀᴍ ᴅᴇᴠᴜ ʀᴏʙᴏᴛ\n\nᴄᴏɴᴛᴀɪɴɪɴɢ ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴏꜰ ᴍᴜsɪᴄ sʏsᴛᴇᴍ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ ʟᴀɢ ꜰʀᴇᴇ  ᴍᴜsɪᴄ\n\nsᴇᴇ  ʜᴇʀᴇ ʙᴇʟᴏᴡ ᴀᴅᴍɪɴ ɴᴅ ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs\nᴛᴏ ᴜsᴇ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ..!!",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_basichelp")]]
+                [
+                  [
+                    InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅs💝", callback_data="luna_admin")
+                    InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs🔯", callback_data="luna_support")
+                  ]
+                [InlineKeyboardButton(text="Back", callback_data="luna_basichelp")]
+                ]    
             ),
         )
     elif query.data == "luna_support":
@@ -437,13 +439,7 @@ def luna_about_callback(update, context):
             f"\n/resume - resume the music was paused"
             f"\n/skip - skip to the next song"
             f"\n/end - stop music streaming"
-            f"\n/join - invite userbot join to your group"
-            f"\n/leave - order the userbot to leave your group"
-            f"\n/auth - authorized user for using music bot"
-            f"\n/unauth - unauthorized for using music bot"
-            f"\n/control - open the player settings panel"
-            f"\n/delcmd (on | off) - enable / disable del cmd feature"
-            f"\n/music (on / off) - disable / enable music player in your group",
+            f"\n/userbotjoin - invite userbot join to your group.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
