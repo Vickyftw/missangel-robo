@@ -387,7 +387,7 @@ def luna_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="ᴅᴜᴅᴜ❤️", url="https://t.me/Itsme_Dream_AD_1713"),
-                    InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/CODER_DEV13"),
+                    InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/HYPER_AD17"),
                  ],
                  [  
                     InlineKeyboardButton(text="🚸ʜᴇʟᴘ&&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
