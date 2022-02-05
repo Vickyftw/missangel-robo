@@ -1,364 +1,173 @@
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+import json
 import re
+import os
+import html
+import requests
+import lunaBot.modules.sql.kuki_sql as sql
 
-import emoji
+from time import sleep
+from telegram import ParseMode
+from lunaBot import dispatcher, updater, SUPPORT_CHAT
+from lunaBot.modules.log_channel import gloggable
+from telegram import (CallbackQuery, Chat, MessageEntity, InlineKeyboardButton,
+                      InlineKeyboardMarkup, Message, ParseMode, Update, Bot, User)
 
-url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
-import re
-import aiohttp
-from googletrans import Translator as google_translator
-from pyrogram import filters
-from lunaBot import BOT_ID, arq
-from lunaBot.helper_extra.aichat import add_chat, get_session, remove_chat
-from lunaBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from lunaBot.pyrogramee.pyrogram import pbot as luna
+from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
+                          DispatcherHandlerStop, Filters, MessageHandler,
+                          run_async)
 
-translator = google_translator()
+from telegram.error import BadRequest, RetryAfter, Unauthorized
 
+from lunaBot.modules.helper_funcs.filters import CustomFilters
+from lunaBot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 
-async def lunaQuery(query: str, user_id: int):
-    luna = await arq.luna(query, user_id)
-    return luna.result
+from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-
-def extract_emojis(s):
-    return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
-
-
-async def fetch(url):
-    try:
-        async with aiohttp.Timeout(10.0):
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as resp:
-                    try:
-                        data = await resp.json()
-                    except:
-                        data = await resp.text()
-            return data
-    except:
-        print("AI response Timeout")
-        return
-
-
-luna_chats = []
-en_chats = []
-# AI Chat (C) 2020-2021 by @InukaAsith
-
-
-@luna.on_message(
-    filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
-)
-@admins_only
-async def hmm(_, message):
-    global luna_chats
-    if len(message.command) != 2:
-        await message.reply_text(
-            "I only recognize `/chatbot on` and /chatbot `off only`"
-        )
-        message.continue_propagation()
-    status = message.text.split(None, 1)[1]
-    chat_id = message.chat.id
-    if status == "ON" or status == "on" or status == "On":
-        lel = await edit_or_reply(message, "`Processing...`")
-        lol = add_chat(int(message.chat.id))
-        if not lol:
-            await lel.edit("Devu ai already activated in this chat")
-            return
-        await lel.edit(
-            f"Devu ai successfully added for users in the chat {message.chat.id}"
-        )
-
-    elif status == "OFF" or status == "off" or status == "Off":
-        lel = await edit_or_reply(message, "`Processing...`")
-        Escobar = remove_chat(int(message.chat.id))
-        if not Escobar:
-            await lel.edit("Luna ai was not activated in this chat")
-            return
-        await lel.edit(
-            f"Devu ai successfully deactivated for users in the chat {message.chat.id}"
-        )
-
-    elif status == "EN" or status == "en" or status == "english":
-        if not chat_id in en_chats:
-            en_chats.append(chat_id)
-            await message.reply_text("English AI chat Enabled!")
-            return
-        await message.reply_text("AI Chat Is Already Disabled.")
-        message.continue_propagation()
-    else:
-        await message.reply_text(
-            "I only recognize `/chatbot on` and /chatbot `off only`"
-        )
-
-
-@luna.on_message(
-    filters.text
-    & filters.reply
-    & ~filters.bot
-    & ~filters.edited
-    & ~filters.via_bot
-    & ~filters.forwarded,
-    group=2,
-)
-async def hmm(client, message):
-    if not get_session(int(message.chat.id)):
-        return
-    if not message.reply_to_message:
-        return
-    try:
-        senderr = message.reply_to_message.from_user.id
-    except:
-        return
-    if senderr != BOT_ID:
-        return
-    msg = message.text
-    chat_id = message.chat.id
-    if msg.startswith("/") or msg.startswith("@"):
-        message.continue_propagation()
-    if chat_id in en_chats:
-        test = msg
-        test = test.replace("luna", "Aco")
-        test = test.replace("Luna", "Aco")
-        response = await lunaQuery(
-            test, message.from_user.id if message.from_user else 0
-        )
-        response = response.replace("Aco", "Luna")
-        response = response.replace("aco", "Luna")
-
-        pro = response
-        try:
-            await luna.send_chat_action(message.chat.id, "typing")
-            await message.reply_text(pro)
-        except CFError:
-            return
-
-    else:
-        u = msg.split()
-        emj = extract_emojis(msg)
-        msg = msg.replace(emj, "")
-        if (
-            [(k) for k in u if k.startswith("@")]
-            and [(k) for k in u if k.startswith("#")]
-            and [(k) for k in u if k.startswith("/")]
-            and re.findall(r"\[([^]]+)]\(\s*([^)]+)\s*\)", msg) != []
-        ):
-
-            h = " ".join(filter(lambda x: x[0] != "@", u))
-            km = re.sub(r"\[([^]]+)]\(\s*([^)]+)\s*\)", r"", h)
-            tm = km.split()
-            jm = " ".join(filter(lambda x: x[0] != "#", tm))
-            hm = jm.split()
-            rm = " ".join(filter(lambda x: x[0] != "/", hm))
-        elif [(k) for k in u if k.startswith("@")]:
-
-            rm = " ".join(filter(lambda x: x[0] != "@", u))
-        elif [(k) for k in u if k.startswith("#")]:
-            rm = " ".join(filter(lambda x: x[0] != "#", u))
-        elif [(k) for k in u if k.startswith("/")]:
-            rm = " ".join(filter(lambda x: x[0] != "/", u))
-        elif re.findall(r"\[([^]]+)]\(\s*([^)]+)\s*\)", msg) != []:
-            rm = re.sub(r"\[([^]]+)]\(\s*([^)]+)\s*\)", r"", msg)
+ 
+@user_admin_no_reply
+@gloggable
+def kukirm(update: Update, context: CallbackContext) -> str:
+    query: Optional[CallbackQuery] = update.callback_query
+    user: Optional[User] = update.effective_user
+    match = re.match(r"rm_chat\((.+?)\)", query.data)
+    if match:
+        user_id = match.group(1)
+        chat: Optional[Chat] = update.effective_chat
+        is_kuki = sql.rem_kuki(chat.id)
+        if is_kuki:
+            is_kuki = sql.rem_kuki(user_id)
+            return (
+                f"<b>{html.escape(chat.title)}:</b>\n"
+                f"AI_DISABLED\n"
+                f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            )
         else:
-            rm = msg
-            # print (rm)
-        try:
-            lan = translator.detect(rm)
-            lan = lan.lang
-        except:
-            return
-        test = rm
-        if not "en" in lan and not lan == "":
-            try:
-                test = translator.translate(test, dest="en")
-                test = test.text
-            except:
-                return
-        # test = emoji.demojize(test.strip())
+            update.effective_message.edit_text(
+                " 𝙳𝚎𝚟𝚇🚀 𝙲𝚑𝚊𝚝𝙱𝚘𝚝 𝙳𝚒𝚜𝚊𝚋𝚕𝚎 𝙱𝚢🔇 {}.".format(mention_html(user.id, user.first_name)),
+                parse_mode=ParseMode.HTML,
+            )
 
-        test = test.replace("luna", "Aco")
-        test = test.replace("Luna", "Aco")
-        response = await lunaQuery(
-            test, message.from_user.id if message.from_user else 0
-        )
-        response = response.replace("Aco", "Luna")
-        response = response.replace("aco", "Luna")
-        response = response.replace("Luna", "Luna")
-        response = response.replace("luna", "Luna")
-        pro = response
-        if not "en" in lan and not lan == "":
-            try:
-                pro = translator.translate(pro, dest=lan)
-                pro = pro.text
-            except:
-                return
-        try:
-            await luna.send_chat_action(message.chat.id, "typing")
-            await message.reply_text(pro)
-        except CFError:
-            return
+    return ""
 
+@user_admin_no_reply
+@gloggable
+def kukiadd(update: Update, context: CallbackContext) -> str:
+    query: Optional[CallbackQuery] = update.callback_query
+    user: Optional[User] = update.effective_user
+    match = re.match(r"add_chat\((.+?)\)", query.data)
+    if match:
+        user_id = match.group(1)
+        chat: Optional[Chat] = update.effective_chat
+        is_kuki = sql.set_kuki(chat.id)
+        if is_kuki:
+            is_kuki = sql.set_kuki(user_id)
+            return (
+                f"<b>{html.escape(chat.title)}:</b>\n"
+                f"AI_ENABLE\n"
+                f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            )
+        else:
+            update.effective_message.edit_text(
+                "𝙳𝚎𝚟𝚇🚀 𝙲𝚑𝚊𝚝𝙱𝚘𝚝 𝙴𝚗𝚊𝚋𝚕𝚎 𝙱𝚢📣 {}.".format(mention_html(user.id, user.first_name)),
+                parse_mode=ParseMode.HTML,
+            )
 
-@luna.on_message(
-    filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
-)
-async def inuka(client, message):
-    msg = message.text
-    if msg.startswith("/") or msg.startswith("@"):
-        message.continue_propagation()
-    u = msg.split()
-    emj = extract_emojis(msg)
-    msg = msg.replace(emj, "")
-    if (
-        [(k) for k in u if k.startswith("@")]
-        and [(k) for k in u if k.startswith("#")]
-        and [(k) for k in u if k.startswith("/")]
-        and re.findall(r"\[([^]]+)]\(\s*([^)]+)\s*\)", msg) != []
-    ):
+    return ""
 
-        h = " ".join(filter(lambda x: x[0] != "@", u))
-        km = re.sub(r"\[([^]]+)]\(\s*([^)]+)\s*\)", r"", h)
-        tm = km.split()
-        jm = " ".join(filter(lambda x: x[0] != "#", tm))
-        hm = jm.split()
-        rm = " ".join(filter(lambda x: x[0] != "/", hm))
-    elif [(k) for k in u if k.startswith("@")]:
+@user_admin
+@gloggable
+def kuki(update: Update, context: CallbackContext):
+    user = update.effective_user
+    message = update.effective_message
+    msg = f"Choose an option👻"
+    keyboard = InlineKeyboardMarkup([[
+        InlineKeyboardButton(
+            text="Enable🔥",
+            callback_data="add_chat({})")],
+       [
+        InlineKeyboardButton(
+            text="Disable💔",
+            callback_data="rm_chat({})")]])
+    message.reply_text(
+        msg,
+        reply_markup=keyboard,
+        parse_mode=ParseMode.HTML,
+    )
 
-        rm = " ".join(filter(lambda x: x[0] != "@", u))
-    elif [(k) for k in u if k.startswith("#")]:
-        rm = " ".join(filter(lambda x: x[0] != "#", u))
-    elif [(k) for k in u if k.startswith("/")]:
-        rm = " ".join(filter(lambda x: x[0] != "/", u))
-    elif re.findall(r"\[([^]]+)]\(\s*([^)]+)\s*\)", msg) != []:
-        rm = re.sub(r"\[([^]]+)]\(\s*([^)]+)\s*\)", r"", msg)
+def kuki_message(context: CallbackContext, message):
+    reply_message = message.reply_to_message
+    if message.text.lower() == "kuki":
+        return True
+    if reply_message:
+        if reply_message.from_user.id == context.bot.get_me().id:
+            return True
     else:
-        rm = msg
-        # print (rm)
-    try:
-        lan = translator.detect(rm)
-        lan = lan.lang
-    except:
+        return False
+        
+
+def chatbot(update: Update, context: CallbackContext):
+    message = update.effective_message
+    chat_id = update.effective_chat.id
+    bot = context.bot
+    is_kuki = sql.is_kuki(chat_id)
+    if not is_kuki:
         return
-    test = rm
-    if not "en" in lan and not lan == "":
-        try:
-            test = translator.translate(test, dest="en")
-            test = test.text
-        except:
+	
+    if message.text and not message.document:
+        if not kuki_message(context, message):
             return
+        Message = message.text
+        bot.send_chat_action(chat_id, action="typing")
+        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIg76Fg4EIo/botname/owner/message='+Message)
+        Kuki = json.loads(kukiurl.text)
+        kuki = Kuki['reply']
+        sleep(0.3)
+        message.reply_text(kuki, timeout=60)
 
-    # test = emoji.demojize(test.strip())
-
-    # Kang with the credits bitches @InukaASiTH
-    test = test.replace("luna", "Aco")
-    test = test.replace("Luna", "Aco")
-
-    response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Luna")
-    response = response.replace("aco", "Luna")
-
-    pro = response
-    if not "en" in lan and not lan == "":
-        pro = translator.translate(pro, dest=lan)
-        pro = pro.text
-    try:
-        await luna.send_chat_action(message.chat.id, "typing")
-        await message.reply_text(pro)
-    except CFError:
-        return
-
-
-@luna.on_message(
-    filters.regex("luna|lonte|lina|kiw|kontol")
-    & ~filters.bot
-    & ~filters.via_bot
-    & ~filters.forwarded
-    & ~filters.reply
-    & ~filters.channel
-    & ~filters.edited
-)
-async def inuka(client, message):
-    msg = message.text
-    if msg.startswith("/") or msg.startswith("@"):
-        message.continue_propagation()
-    u = msg.split()
-    emj = extract_emojis(msg)
-    msg = msg.replace(emj, "")
-    if (
-        [(k) for k in u if k.startswith("@")]
-        and [(k) for k in u if k.startswith("#")]
-        and [(k) for k in u if k.startswith("/")]
-        and re.findall(r"\[([^]]+)]\(\s*([^)]+)\s*\)", msg) != []
-    ):
-
-        h = " ".join(filter(lambda x: x[0] != "@", u))
-        km = re.sub(r"\[([^]]+)]\(\s*([^)]+)\s*\)", r"", h)
-        tm = km.split()
-        jm = " ".join(filter(lambda x: x[0] != "#", tm))
-        hm = jm.split()
-        rm = " ".join(filter(lambda x: x[0] != "/", hm))
-    elif [(k) for k in u if k.startswith("@")]:
-
-        rm = " ".join(filter(lambda x: x[0] != "@", u))
-    elif [(k) for k in u if k.startswith("#")]:
-        rm = " ".join(filter(lambda x: x[0] != "#", u))
-    elif [(k) for k in u if k.startswith("/")]:
-        rm = " ".join(filter(lambda x: x[0] != "/", u))
-    elif re.findall(r"\[([^]]+)]\(\s*([^)]+)\s*\)", msg) != []:
-        rm = re.sub(r"\[([^]]+)]\(\s*([^)]+)\s*\)", r"", msg)
-    else:
-        rm = msg
-        # print (rm)
-    try:
-        lan = translator.detect(rm)
-        lan = lan.lang
-    except:
-        return
-    test = rm
-    if not "en" in lan and not lan == "":
+def list_all_chats(update: Update, context: CallbackContext):
+    chats = sql.get_all_kuki_chats()
+    text = "<b>KUKI-Enabled Chats</b>\n"
+    for chat in chats:
         try:
-            test = translator.translate(test, dest="en")
-            test = test.text
-        except:
-            return
-
-    # test = emoji.demojize(test.strip())
-
-    test = test.replace("luna", "Aco")
-    test = test.replace("Luna", "Aco")
-    response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "luna")
-    response = response.replace("aco", "Luna")
-
-    pro = response
-    if not "en" in lan and not lan == "":
-        try:
-            pro = translator.translate(pro, dest=lan)
-            pro = pro.text
-        except Exception:
-            return
-    try:
-        await luna.send_chat_action(message.chat.id, "typing")
-        await message.reply_text(pro)
-    except CFError:
-        return
-
+            x = context.bot.get_chat(int(*chat))
+            name = x.title or x.first_name
+            text += f"• <code>{name}</code>\n"
+        except (BadRequest, Unauthorized):
+            sql.rem_kuki(*chat)
+        except RetryAfter as e:
+            sleep(e.retry_after)
+    update.effective_message.reply_text(text, parse_mode="HTML")
 
 __help__ = """
-• Devu is the only ai system which can detect & reply upto 200 language's
-
-✪ /chatbot ON/OFF: Enables and disables AI Chat mode.
-✪ /chatbot EN : Enables English only chatbot.
+Chatbot utilizes the TGN's api which allows Kuki to talk and provide a more interactive group chat experience.
+*Admins only Commands*:
+ • `/Chatbot`*:* Shows chatbot control panel
+  
+*Powered by ItelAi*
 """
 
-__mod_name__ = "ᴄʜᴀᴛʙᴏᴛ"
+__mod_name__ = "ChatBot"
+
+
+CHATBOTK_HANDLER = CommandHandler("chatbot", kuki)
+ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat")
+RM_CHAT_HANDLER = CallbackQueryHandler(kukirm, pattern=r"rm_chat")
+CHATBOT_HANDLER = MessageHandler(
+    Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
+                    & ~Filters.regex(r"^\/")), chatbot)
+LIST_ALL_CHATS_HANDLER = CommandHandler(
+    "allchats", list_all_chats, filters=CustomFilters.dev_filter)
+
+dispatcher.add_handler(ADD_CHAT_HANDLER)
+dispatcher.add_handler(CHATBOTK_HANDLER)
+dispatcher.add_handler(RM_CHAT_HANDLER)
+dispatcher.add_handler(LIST_ALL_CHATS_HANDLER)
+dispatcher.add_handler(CHATBOT_HANDLER)
+
+__handlers__ = [
+    ADD_CHAT_HANDLER,
+    CHATBOTK_HANDLER,
+    RM_CHAT_HANDLER,
+    LIST_ALL_CHATS_HANDLER,
+    CHATBOT_HANDLER,
+]
