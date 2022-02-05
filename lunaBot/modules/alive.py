@@ -7,7 +7,6 @@ from pyrogram import __version__ as pyrover
 from lunaBot.events import register as MEMEK
 from lunaBot import telethn as tbot
 
-RELOAD_LOGO = "https://telegra.ph/file/f7b0387db2dd5070e6eab.mp4"
 ALIBE_LOGO = "https://telegra.ph/file/179825db677596b9f574d.mp4"
 
 @MEMEK(pattern=("/alibe"))
