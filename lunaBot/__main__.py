@@ -392,7 +392,10 @@ def luna_about_callback(update, context):
                  ],
                  [  
                     InlineKeyboardButton(text="🚸ʜᴇʟᴘ&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
+                 ],
+                 [
                     InlineKeyboardButton(text="💘ᴅᴇᴠᴜ ᴍᴜsɪᴄ💟", callback_data="luna_notes"),
+                 ],   
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
@@ -424,8 +427,8 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                    InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅs💝", callback_data="luna_admin")
-                    InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs🔯", callback_data="luna_support")
+                    InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅs💝", callback_data="luna_admin"),
+                    InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs🔯", callback_data="luna_support"),
                   ]
                 [InlineKeyboardButton(text="Back", callback_data="luna_basichelp")]
                 ]    
