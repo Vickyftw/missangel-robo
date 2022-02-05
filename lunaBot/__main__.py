@@ -346,14 +346,15 @@ def luna_about_callback(update, context):
     query = update.callback_query
     if query.data == "luna_":
         query.message.edit_text(
-            text="""Hi again! I'am a full-fledged group management bot built to help you manage your group easily.\n
-                    \nI can do lot of stuff, some of them are:
-                    \n• Restrict users who flood your chat using my anti-flood module.
-                    \n• Safeguard your group with the advanced and handy Antispam system.
-                    \n• Greet users with media + text and buttons, with proper formatting.
-                    \n• Save notes and filters with proper formatting and reply markup.\n
-                    \nNote: I need to be promoted with proper admin permissions to fuction properly.\n
-                    \nCheck Setup Guide to learn on setting up the bot and on help to learn more.""",
+            text="""ʜɪ ᴀɢᴀɪɴ!\n\n ɪ'ᴀᴍ ᴀ ꜰᴜʟʟ-ꜰʟᴇᴅɢᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.\n\n
+                    \nɪ ᴄᴀɴ ᴅᴏ ʟᴏᴛ ᴏꜰ sᴛᴜꜰꜰ, sᴏᴍᴇ ᴏꜰ ᴛʜᴇᴍ ᴀʀᴇ:\n
+                    \n• ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs ᴡʜᴏ ꜰʟᴏᴏᴅ ʏᴏᴜʀ ᴄʜᴀᴛ ᴜsɪɴɢ ᴍʏ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ᴍᴏᴅᴜʟᴇ.\n
+                    \n• sᴀꜰᴇɢᴜᴀʀᴅ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʜᴀɴᴅʏ ᴀɴᴛɪsᴘᴀᴍ sʏsᴛᴇᴍ.\n
+                    \n• ɢʀᴇᴇᴛ ᴜsᴇʀs ᴡɪᴛʜ ᴍᴇᴅɪᴀ + ᴛᴇxᴛ ᴀɴᴅ ʙᴜᴛᴛᴏɴs, ᴡɪᴛʜ ᴘʀᴏᴘᴇʀ ꜰᴏʀᴍᴀᴛᴛɪɴɢ.\n
+                    \n• sᴀᴠᴇ ɴᴏᴛᴇs ᴀɴᴅ ꜰɪʟᴛᴇʀs ᴡɪᴛʜ ᴘʀᴏᴘᴇʀ ꜰᴏʀᴍᴀᴛᴛɪɴɢ ᴀɴᴅ ʀᴇᴘʟʏ ᴍᴀʀᴋᴜᴘ.\n
+                    \n• ɪ ᴀᴍ ꜰᴜʟʟ ᴛʀᴜsᴛᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ᴛᴏᴜɢʜ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ ᴏꜰ ʏᴏᴜʀ ʟᴏʙᴇʟʏ ɢʀᴏᴜᴘ.\n
+                    \nɴᴏᴛᴇ: ɪ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴘʀᴏᴍᴏᴛᴇᴅ ᴡɪᴛʜ ᴘʀᴏᴘᴇʀ ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ꜰᴜᴄᴛɪᴏɴ ᴘʀᴏᴘᴇʀʟʏ.\n
+                    \nᴄʜᴇᴄᴋ sᴇᴛᴜᴘ ɢᴜɪᴅᴇ ᴛᴏ ʟᴇᴀʀɴ ᴏɴ sᴇᴛᴛɪɴɢ ᴜᴘ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ᴏɴ ʜᴇʟᴘ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ!!\n""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -362,7 +363,7 @@ def luna_about_callback(update, context):
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/SCILENT_BOT"
                         ),
-                        InlineKeyboardButton(text="ᴅᴇᴠs&ᴄᴏᴍᴍᴀɴᴅs", callback_data="luna_basichelp"),
+                        InlineKeyboardButton(text="🧑‍💻ᴅᴇᴠs&ᴄᴏᴍᴍᴀɴᴅs🆘", callback_data="luna_basichelp"),
                     ],
                     [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="luna_back")],
                 ]
@@ -389,7 +390,7 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/CODER_DEV13"),
                  ],
                  [  
-                    InlineKeyboardButton(text="ʜᴇʟᴘ&&ᴍᴏᴅᴜʟᴇs", callback_data="help_back"),
+                    InlineKeyboardButton(text="🚸ʜᴇʟᴘ&&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back"),
