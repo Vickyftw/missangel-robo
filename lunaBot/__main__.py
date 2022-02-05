@@ -209,12 +209,15 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_LOGO, caption= "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            START_LOGO, caption= "☆ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\n☆「ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ꜰᴏʀ ᴍᴏʀᴇ ᴍᴏᴅᴜʟᴇʀ ʜᴇʟᴘ\nᴘʀᴇss ᴏɴ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.!!」".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/SCILENCE_SUPPORT")]]
+                [
+                    [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/SCILENCE_SUPPORT")]
+                    [InlineKeyboardButton(text="ɢᴏ ᴛᴏ ᴍʏ ᴘᴍ👉", url="http://t.me/DEVU_ROBOT?start=help")]
+                ]
             ),
         )
         
@@ -632,12 +635,6 @@ def get_help(update: Update, context: CallbackContext):
                         InlineKeyboardButton(
                             text="Hᴇʟᴘ ❔",
                             url="t.me/{}?start=help".format(context.bot.username),
-                        )
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ 📢 ",
-                            url="https://t.me/{}".format(SUPPORT_CHAT),
                         )
                     ],
                 ]
