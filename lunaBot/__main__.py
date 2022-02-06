@@ -87,7 +87,7 @@ buttons = [
         InlineKeyboardButton(text="❄ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.!! ❄", url="http://t.me/DEVU_ROBOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="❇️ᴀʙᴏᴜᴛ ᴍᴇ❇️", callback_data="luna_"),
+        InlineKeyboardButton(text="❇️☆•ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ•☆❇️", callback_data="luna_"),
     ],
 ]
 
