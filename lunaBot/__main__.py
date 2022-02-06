@@ -412,7 +412,7 @@ def luna_about_callback(update, context):
             f"\n/song (song name) - download song from youtube."
             f"\n/search (video name) - search video from youtube detailed."
             f"\n/vsong (video title) - download video music from youtube."
-            f"\n/alive - check bot is alive or not (fun cmd for user)",
+            f"\n/alibe - check bot is alive or not (fun cmd for user)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
