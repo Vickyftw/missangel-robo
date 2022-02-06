@@ -1,4 +1,4 @@
-import random
+'''import random
 import requests
 from lunaBot.events import register
 from lunaBot import telethn
@@ -32,3 +32,4 @@ async def apakah(event):
         await event.reply('Berikan saya pertanyaan 😐')
         return
     await event.reply(random.choice(APAKAH_STRING))
+'''
