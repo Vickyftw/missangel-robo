@@ -1,4 +1,4 @@
-import re
+"""import re
 import os
 
 from telethon import events, Button
@@ -20,4 +20,4 @@ async def awake(event):
   DEVU += "**Thanks For Adding Me Here ❤️**"
   BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/DEVU_ROBOT?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/SCILENT_BOTS")]]
   await tbot.send_file(event.chat_id, ALIBE_LOGO, caption=DEVU,  buttons=BUTTON)
-#Alive command..!!
+#Alive command..!!"""
