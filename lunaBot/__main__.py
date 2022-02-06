@@ -364,11 +364,11 @@ def luna_about_callback(update, context):
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/SCILENT_BOT"
                         ),
-                        InlineKeyboardButton(text="🧑‍💻ᴅᴇᴠs&ᴄᴏᴍᴍᴀɴᴅs🆘", callback_data="luna_basichelp"),
+                        InlineKeyboardButton(text="♻️ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ🤍", url="https://t.me/DevuAssistant"),
                     ],
                     [
                         InlineKeyboardButton(text="💘ᴅᴇᴠᴜ ᴍᴜsɪᴄ💟", callback_data="luna_notes"),
-                        InlineKeyboardButton(text="♻️ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ🤍", url="https://t.me/DevuAssistant"),
+                        InlineKeyboardButton(text="🧑‍💻ᴅᴇᴠs&ᴄᴏᴍᴍᴀɴᴅs🆘", callback_data="luna_basichelp"),
                     ],
                     [InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back")],
                 ]
