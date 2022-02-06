@@ -415,7 +415,7 @@ def luna_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="luna_notes")]]
             ),
         )
 
@@ -425,10 +425,10 @@ def luna_about_callback(update, context):
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
-                  [
-                    InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅs💝", callback_data="luna_admin"),
-                    InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs🔯", callback_data="luna_support"),
-                  ]
+                 [
+                   InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅs💝", callback_data="luna_admin"),
+                   InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs🔯", callback_data="luna_support"),
+                 ]
                 [InlineKeyboardButton(text="Back", callback_data="luna_basichelp")]
                 ]    
             ),
@@ -446,7 +446,7 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="luna_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="luna_notes"),
                  
                  ]
                 ]
