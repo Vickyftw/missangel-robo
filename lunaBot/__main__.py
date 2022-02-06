@@ -366,6 +366,10 @@ def luna_about_callback(update, context):
                         ),
                         InlineKeyboardButton(text="🧑‍💻ᴅᴇᴠs&ᴄᴏᴍᴍᴀɴᴅs🆘", callback_data="luna_basichelp"),
                     ],
+                    [
+                        InlineKeyboardButton(text="💘ᴅᴇᴠᴜ ᴍᴜsɪᴄ💟", callback_data="luna_notes"),
+                        InlineKeyboardButton(text="♻️ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ🤍", url="https://t.me/DevuAssistant"),
+                    ]
                     [InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back")],
                 ]
             ),
@@ -394,9 +398,6 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="🚸ʜᴇʟᴘ&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="💘ᴅᴇᴠᴜ ᴍᴜsɪᴄ💟", callback_data="luna_notes"),
-                 ],
-                 [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
                  ],
                 ],
@@ -406,11 +407,10 @@ def luna_about_callback(update, context):
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──**"
             f"\n\n/play (song name) - play song from youtube"
-            f"\n/ytp (song name) - play song directly from"
             f"\n/playlist - show the list song in queue"
             f"\n/song (song name) - download song from youtube."
             f"\n/search (video name) - search video from youtube detailed."
-            f"\n/video (video title) - download video music from youtube."
+            f"\n/vsong (video title) - download video music from youtube."
             f"\n/alive - check bot is alive or not (fun cmd for user)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
