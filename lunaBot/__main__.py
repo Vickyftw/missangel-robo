@@ -407,6 +407,7 @@ def luna_about_callback(update, context):
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──**"
             f"\n\n/play (song name) - play song from youtube"
+            f"\n/stream - reply to audio file to\nstream song in vc!!"
             f"\n/playlist - show the list song in queue"
             f"\n/song (song name) - download song from youtube."
             f"\n/search (video name) - search video from youtube detailed."
