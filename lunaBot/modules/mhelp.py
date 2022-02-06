@@ -1,4 +1,4 @@
-import re
+'''import re
 import os
 
 from telethon import events, Button
@@ -27,3 +27,4 @@ async def awake(event):
 
   BUTTON = [[Button.url("☎️ Support", "https://t.me/lunaXresso"), Button.url("📡 Updates", "https://t.me/ZeinzoProject")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=LUNA,  buttons=BUTTON)
+'''
