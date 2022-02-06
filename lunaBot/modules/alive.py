@@ -9,7 +9,7 @@ from lunaBot import telethn as tbot
 
 ALIBE_LOGO = "https://telegra.ph/file/179825db677596b9f574d.mp4"
 
-@MEMEK(pattern=("/alibe"))
+@MEMEK(pattern=("/alive"))
 async def awake(event):
   tai = event.sender.first_name
   DEVU = "**HoII!, I'm Devu Robot!** \n\n"
