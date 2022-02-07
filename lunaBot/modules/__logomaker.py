@@ -252,9 +252,9 @@ LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id != OWNER_ID and not quew:
-  await event.reply('`Please give me the text for the logo!`\n`Example /logo <pantek>`')
+  await event.reply('`ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴍᴇ ᴛʜᴇ ᴛᴇxᴛ ꜰᴏʀ ᴛʜᴇ ʟᴏɢᴏ!!!`\n`ᴇxᴀᴍᴘʟᴇ /logo <Text>`')
   return
- pesan = await event.reply('`Creating your logo...`')
+ pesan = await event.reply('`ɢᴇɴᴇʀᴀᴛɪɴɢ ᴀ ʟᴏɢᴏ ꜰᴏʀ ᴜʜ...!!`')
  try:
     text = event.pattern_match.group(1)
     randc = random.choice(LOGO_LINKS)
@@ -276,9 +276,9 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "luna.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by [Luna ✨](https://t.me/lunatapibot)")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"ʟᴏɢᴏ ᴄʀᴇᴀᴛᴇᴅ ʙʏ [ᴅᴇᴠᴜ ʀᴏʙᴏᴛ 🇮🇳](https://t.me/DEVU_ROBOT)")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
  except Exception as e:
-    await event.reply(f'Error, Report @lunaXresso')
+    await event.reply(f'`ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ɪɴ ʟᴏɢᴏ ᴍᴀᴋɪɴɢ ᴛʀʏ ᴀɢᴀɪɴ !!😐`')
