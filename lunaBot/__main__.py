@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/736c87fcd90273108348c.mp4"
 
 PM_START_TEXT = (f'''
-𝗛𝗲𝘆!, 𝗜 𝗮𝗺 ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」[😎](https://telegra.ph/file/f31af856c345e00513c36.mp4)
+𝗛𝗲𝘆!, 𝗜 𝗮𝗺 [ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」](https://t.me/DEVU_ROBOT),[😎](https://telegra.ph/file/f31af856c345e00513c36.mp4)
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
 ️●───────❚❚───────●
@@ -407,12 +407,11 @@ def luna_about_callback(update, context):
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──**"
             f"\n\n/play (song name) - play song from youtube"
-            f"\n/stream - reply to audio file to\nstream song in vc!!"
             f"\n/playlist - show the list song in queue"
             f"\n/song (song name) - download song from youtube."
             f"\n/search (video name) - search video from youtube detailed."
-            f"\n/vsong (video title) - download video music from youtube."
-            f"\n/alibe - check bot is alive or not (fun cmd for user)",
+            f"\n/video (video title) - download video music from youtube."
+            f"\n/alive - check bot is alive or not (fun cmd for user)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
