@@ -19,6 +19,6 @@ async def awake(event):
   DEVU += f"✘ **𝗣𝘆𝗿𝗼𝗴𝗿𝗮𝗺 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : {pyrover}** \n\n"
   DEVU += "**❄「𝗧𝗵𝗮𝗻𝘅𝘅 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲 𝘀𝘂𝗿」❤️❄**"
   BUTTON = [[Button.url("「♡ᴅᴜᴅᴜ♡」", "https://t.me/Itsme_Dream_AD_1713"), Button.url("「☆ʙᴜʙᴜ☆」", " https://t.me/HYPER_AD17")]],
-  BUTTON = [[Button.url("「❖ᴍʏ ʜᴏᴍᴇ🔥❖」", "https://t.me/SCILENT_BOTS")]]
-  await tbot.send_file(event.chat_id, ALIBE_LOGO, caption=DEVU,  buttons=BUTTON)
+  BUTTON2 = [[Button.url("「❖ᴍʏ ʜᴏᴍᴇ🔥❖」", "https://t.me/SCILENT_BOTS")]]
+  await tbot.send_file(event.chat_id, ALIBE_LOGO, caption=DEVU,  buttons=BUTTON, buttons=BUTTON2)
 #Alive command..!!
