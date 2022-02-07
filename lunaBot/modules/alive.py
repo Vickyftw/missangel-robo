@@ -18,6 +18,6 @@ async def awake(event):
   DEVU += f"✘ **𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : {tlhver}** \n\n"
   DEVU += f"✘ **𝗣𝘆𝗿𝗼𝗴𝗿𝗮𝗺 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : {pyrover}** \n\n"
   DEVU += "**❄「𝗧𝗵𝗮𝗻𝘅𝘅 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲 𝘀𝘂𝗿」❤️❄**"
-  BUTTON = [[Button.url("「☆ʜᴇʟᴘ☆」", "https://t.me/DEVU_ROBOT?start=help"), Button.url("「❖ᴍʏ ʜᴏᴍᴇ🔥❖」", "https://t.me/SCILENT_BOTS")]]
+  BUTTON = [[Button.url("「♡ᴅᴜᴅᴜ♡」", "https://t.me/Itsme_Dream_AD_1713"), Button.url("「☆ʙᴜʙᴜ☆」", " https://t.me/HYPER_AD17")], [Button.url("「❖ᴍʏ ʜᴏᴍᴇ🔥❖」", "https://t.me/SCILENT_BOTS")]]
   await tbot.send_file(event.chat_id, ALIBE_LOGO, caption=DEVU,  buttons=BUTTON)
 #Alive command..!!
