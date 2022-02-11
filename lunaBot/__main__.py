@@ -635,6 +635,9 @@ def get_help(update: Update, context: CallbackContext):
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
+                    [
+                        InlineKeyboardButton(text="💝ᴅᴇᴠᴜ ᴍᴜsɪᴄ ᴄᴍᴅs💝", url="https://telegra.ph/%E1%B4%85%E1%B4%87%E1%B4%A0%E1%B4%9CMusic-02-11"),
+                    ],
                 ]
             ),
         )
