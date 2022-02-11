@@ -504,15 +504,11 @@ def luna_about_callback(update, context):
                  f"\n/restart :- 𝗦𝗲𝗮𝗿𝗰𝗵 𝗟𝘆𝗿𝗶𝗰𝘀 𝗼𝗳 𝗮𝗻𝘆 𝘀𝗼𝗻𝗴\n"
                  f"\n/maintenance (enable/disable) :- 𝗖𝗵𝗲𝗰𝗸 𝗪𝗲𝗮𝘁𝗵𝗲𝗿 𝗧𝗵𝗲 𝗖𝗵𝗮𝘁 𝗶𝘀 𝗯𝗹𝗮𝗰𝗸𝗹𝗶𝘀𝘁𝗲𝗱 𝗼𝗿 𝗻𝗼𝘁!!\n"
                  f"\n/update :- 𝗖𝗵𝗲𝗮𝗸 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗮𝘀𝘀𝗶𝘀𝘁𝗲𝗻𝘁!!\n"
-                 f"\n/clean :-  𝗦𝗲𝗲 𝗦𝘂𝗱𝗼 𝗟𝗶𝘀𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗯𝗼𝘁!!\n"
+                 f"\n/clean :-  𝗦𝗲𝗲 𝗦𝘂𝗱𝗼 𝗟𝗶𝘀𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗯𝗼𝘁!!\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="Admins Permissions", callback_data="luna_asu"),
-                    InlineKeyboardButton(text="Anti Spam", callback_data="luna_asi"),
-                 ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="luna_notes"),
                  
