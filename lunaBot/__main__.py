@@ -434,7 +434,7 @@ def luna_about_callback(update, context):
                   InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴍᴅs🔯", callback_data="luna_support"),
                  ],
                  [
-                  InlineKeyboardButton(text="💘sᴜᴅᴏ ᴄᴍᴅ🧑‍💻", callback_data="luna_credit",),
+                  InlineKeyboardButton(text="💘sᴜᴅᴏ ᴄᴍᴅ🧑‍💻", callback_data="luna_credit"),
                   InlineKeyboardButton(text="🔥ᴏᴡɴᴇʀ ᴄᴍᴅs🤍", callback_data="luna_aselole"),
                  ],
                  [
@@ -472,7 +472,7 @@ def luna_about_callback(update, context):
         )
     elif query.data == "luna_credit":
         query.message.edit_text(
-            text=f"──「 `Sudo CMD` 」──\n</b>\n"
+            text=f"──「 `Sudo CMD` 」──\n"
             f"\n ┌───𝗦𝗨𝗗𝗢𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦𝄞🇮🇳\n"
 
             f"\n/blacklistchat (chat id) :- 𝗕𝗹𝗮𝗰𝗸𝗹𝗶𝘀𝘁 𝗮𝗻𝘆 𝗰𝗵𝗮𝘁𝘀!!\n"
