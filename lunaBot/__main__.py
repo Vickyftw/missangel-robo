@@ -87,7 +87,7 @@ buttons = [
         InlineKeyboardButton(text="❄ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.!! ❄", url="http://t.me/DEVU_ROBOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="❇️☆•ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ•☆❇️", callback_data="luna_"),
+        InlineKeyboardButton(text="❇️☆•ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ•☆❇️", callback_data="devu_"),
     ],
 ]
 
@@ -398,7 +398,7 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="🚸ʜᴇʟᴘ&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="devu_"),
                  ],
                 ],
             ),
@@ -437,7 +437,7 @@ def luna_about_callback(update, context):
                   InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴍᴅs🔯", callback_data="luna_support"),
                   InlineKeyboardButton(text="🔥ᴏᴡɴᴇʀ ᴄᴍᴅs🤍", callback_data="luna_aselole"),
                  ],
-                [InlineKeyboardButton(text="Back", callback_data="luna_")]
+                [InlineKeyboardButton(text="Back", callback_data="devu_")]
                 ],   
             ),
         )
