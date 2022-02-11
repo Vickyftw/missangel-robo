@@ -345,7 +345,7 @@ def help_button(update, context):
 @run_async
 def luna_about_callback(update, context):
     query = update.callback_query
-    if query.data == "luna_":
+    if query.data == "devu_":
         query.message.edit_text(
             text="""ʜɪ ᴀɢᴀɪɴ!\n\n ɪ'ᴀᴍ ᴀ ꜰᴜʟʟ-ꜰʟᴇᴅɢᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.\n\n
                     \nɪ ᴄᴀɴ ᴅᴏ ʟᴏᴛ ᴏꜰ sᴛᴜꜰꜰ, sᴏᴍᴇ ᴏꜰ ᴛʜᴇᴍ ᴀʀᴇ:\n
@@ -482,7 +482,7 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="Luna", url="https://t.me/tdrki_1"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="luna_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="luna_notes"),
                  
                  ]
                 ]
@@ -505,7 +505,7 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="Anti Spam", callback_data="luna_asi"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="luna_"),
+                    InlineKeyboardButton(text="Back", callback_data="luna_notes"),
                  
                  ]
                 ]
