@@ -432,11 +432,13 @@ def luna_about_callback(update, context):
                  [
                   InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴍᴅs💝", callback_data="luna_admin"),
                   InlineKeyboardButton(text="💘ᴜᴅᴏs ᴄᴍᴅ🧑‍💻", callback_data="luna_credit"),
-                  InlineKeyboardButton(text="💘|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|¹🤍", url="https://t.me/DevuAssistant"),
                  ],
                  [
                   InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴍᴅs🔯", callback_data="luna_support"),
                   InlineKeyboardButton(text="🔥ᴏᴡɴᴇʀ ᴄᴍᴅs🤍", callback_data="luna_aselole"),
+                 ],
+                 [
+                  InlineKeyboardButton(text="💘|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|¹🤍", url="https://t.me/DevuAssistant"),
                   InlineKeyboardButton(text="♻️|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|²🤍", utl="https://t.me/DevuAssistant2"),
                  ],
                 [InlineKeyboardButton(text="Back", callback_data="luna_")]
