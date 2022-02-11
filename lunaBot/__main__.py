@@ -438,8 +438,8 @@ def luna_about_callback(update, context):
                   InlineKeyboardButton(text="🔥ᴏᴡɴᴇʀ ᴄᴍᴅs🤍", callback_data="luna_aselole"),
                  ],
                  [
-                  InlineKeyboardButton(text="💘|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|¹🤍", url="https://t.me/DevuAssistant"),
-                  InlineKeyboardButton(text="♻️|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|²🤍", utl="https://t.me/DevuAssistant2"),
+                  InlineKeyboardButton(text="💘ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ1🤍", url="https://t.me/DevuAssistant"),
+                  InlineKeyboardButton(text="♻️ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ2🤍", url="https://t.me/DevuAssistant2"),
                  ],
                 [InlineKeyboardButton(text="Back", callback_data="luna_")]
                 ],   
