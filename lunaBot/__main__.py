@@ -87,7 +87,7 @@ buttons = [
         InlineKeyboardButton(text="❄ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.!! ❄", url="http://t.me/DEVU_ROBOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="❇️☆•ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ•☆❇️", callback_data="devu_"),
+        InlineKeyboardButton(text="❇️☆•ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ•☆❇️", callback_data="luna_"),
     ],
 ]
 
@@ -345,7 +345,7 @@ def help_button(update, context):
 @run_async
 def luna_about_callback(update, context):
     query = update.callback_query
-    if query.data == "devu_":
+    if query.data == "luna_":
         query.message.edit_text(
             text="""ʜɪ ᴀɢᴀɪɴ!\n\n ɪ'ᴀᴍ ᴀ ꜰᴜʟʟ-ꜰʟᴇᴅɢᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.\n\n
                     \nɪ ᴄᴀɴ ᴅᴏ ʟᴏᴛ ᴏꜰ sᴛᴜꜰꜰ, sᴏᴍᴇ ᴏꜰ ᴛʜᴇᴍ ᴀʀᴇ:\n
@@ -364,7 +364,7 @@ def luna_about_callback(update, context):
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/SCILENT_BOT"
                         ),
-                        InlineKeyboardButton(text="♻️ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ🤍", url="https://t.me/DevuAssistant"),
+                        InlineKeyboardButton(text="♻️ᴏᴡɴᴇʀ🤍", url="https://github.com/HYPER-AD17"),
                     ],
                     [
                         InlineKeyboardButton(text="💘ᴅᴇᴠᴜ ᴍᴜsɪᴄ💟", callback_data="luna_notes"),
@@ -398,7 +398,7 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="🚸ʜᴇʟᴘ&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="devu_"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
                  ],
                 ],
             ),
@@ -432,12 +432,14 @@ def luna_about_callback(update, context):
                  [
                   InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴍᴅs💝", callback_data="luna_admin"),
                   InlineKeyboardButton(text="💘ᴜᴅᴏs ᴄᴍᴅ🧑‍💻", callback_data="luna_credit"),
+                  InlineKeyboardButton(text="💘|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|¹🤍", url="https://t.me/DevuAssistant"),
                  ],
                  [
                   InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴍᴅs🔯", callback_data="luna_support"),
                   InlineKeyboardButton(text="🔥ᴏᴡɴᴇʀ ᴄᴍᴅs🤍", callback_data="luna_aselole"),
+                  InlineKeyboardButton(text="♻️|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|²🤍", utl="https://t.me/DevuAssistant2"
                  ],
-                [InlineKeyboardButton(text="Back", callback_data="devu_")]
+                [InlineKeyboardButton(text="Back", callback_data="luna_")]
                 ],   
             ),
         )
@@ -468,22 +470,24 @@ def luna_about_callback(update, context):
         )
     elif query.data == "luna_credit":
         query.message.edit_text(
-            text=f"<b> `Cʀᴇᴅɪᴛ Fᴏʀ Lᴜɴᴀ Dᴇᴠ's` </b>\n"
-            f"\nHᴇʀᴇ Sᴏᴍᴇ Dᴇᴠᴇʟᴏᴘᴇʀs Hᴇʟᴘɪɴɢ Iɴ Mᴀᴋɪɴɢ Tʜᴇ Lᴜɴᴀ",
+            text=f"──「 `Sudo CMD` 」──\n</b>\n"
+            f"\n ┌───𝗦𝗨𝗗𝗢𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦𝄞🇮🇳\n"
+
+            f"\n/blacklistchat (chat id) :- 𝗕𝗹𝗮𝗰𝗸𝗹𝗶𝘀𝘁 𝗮𝗻𝘆 𝗰𝗵𝗮𝘁𝘀!!\n"
+            f"\n/whitelistchat (chat id) :- 𝗪𝗵𝗶𝘁𝗲𝗹𝗶𝘀𝘁 𝗮𝗻𝘆 𝗯𝗹𝗮𝗰𝗸𝗹𝗶𝘀𝘁𝗲𝗱 𝗰𝗵𝗮𝘁!!\n"
+            f"\n/broadcast (Message/reply to message) :- 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁 𝗺𝗲𝘀𝘀𝗮𝗴𝗲!!\n"
+            f"\n/broadcast_pin (Message/reply to message) :- 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁 𝗺𝗲𝘀𝘀𝗮𝗴𝗲!!\n"
+            f"\n/broadcast_pin_loud (Message/reply to message) :- 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁 𝗺𝗲𝘀𝘀𝗮𝗴𝗲!!\n"
+            f"\n/joinassistant (chat id/username) :- 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗝𝗼𝗶𝗻𝗲𝗱 𝘁𝗼 𝗧𝗵𝗲 𝗖𝗵𝗮𝘁!!\n"
+            f"\n/leaveassistant (chat id/username) :- 𝗟𝗲𝗮𝘃𝗲 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗳𝗿𝗼𝗺 𝘁𝗵𝗮𝘁 𝗰𝗵𝗮𝘁!\n"
+            f"\n/changeassistant (assistant number) :- 𝗖𝗵𝗮𝗻𝗴𝗲 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 !!\n"
+            f"\n/setassistant (assistant no./random) :- 𝗦𝗲𝘁 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁!\n"
+            f"\n/activevc :- 𝗖𝗵𝗲𝗰𝗸 𝘄𝗲𝗮𝘁𝗵𝗲𝗿 𝘃𝗰 𝗶𝘀 𝗼𝗻 𝗼𝗿 𝗻𝗼𝘁!!\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Alina", url="https://t.me/rizexx"),
-                    InlineKeyboardButton(text="Nao", url="https://t.me/xgothboi"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Yui", url="https://t.me/Badboyanim"),
-                    InlineKeyboardButton(text="Luna", url="https://t.me/tdrki_1"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Back", callback_data="luna_notes"),
-                 
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_notes"),
                  ]
                 ]
             ),
@@ -491,11 +495,16 @@ def luna_about_callback(update, context):
         
     elif query.data == "luna_aselole":
         query.message.edit_text(
-            text=f"｢ Setup Guide 」\n"
-                 f"\nYou can add me to your group by clicking this link and selecting the chat.\n"
-                 f"\nRead Admin Permissions and Anti-spam for basic info.\n"
-                 f"\nRead Detailed Setup Guide to learn about setting up the bot in detail. (Recommended)\n"
-                 f"\nIf you do need help with further instructions feel free to ask in @THN\_NETWORK.",
+            text=f"──「 Admin CMD 」──\n"
+                 f"\n┌───𝗢𝗪𝗡𝗘𝗥 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦𝄞🇮🇳\n"
+
+                 f"\n/leavebot (chat id/username) :- 𝗣𝗹𝗮𝘆 𝗬𝗼𝘂𝗿 𝗚𝗶𝘃𝗲𝗻 𝗦𝗼𝗻𝗴 𝗜𝗻 𝘃𝗰!!\n"
+                 f"\n/addsudo (username/user id) :- 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝘆𝗼𝘂𝗿 𝗴𝗶𝘃𝗲𝗻 𝗦𝗼𝗻𝗴 !!\n"
+                 f"\n/delsudo (username/user id) :- 𝗦𝗲𝗲 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗣𝗹𝗮𝘆𝗟𝗶𝘀𝘁\n"
+                 f"\n/restart :- 𝗦𝗲𝗮𝗿𝗰𝗵 𝗟𝘆𝗿𝗶𝗰𝘀 𝗼𝗳 𝗮𝗻𝘆 𝘀𝗼𝗻𝗴\n"
+                 f"\n/maintenance (enable/disable) :- 𝗖𝗵𝗲𝗰𝗸 𝗪𝗲𝗮𝘁𝗵𝗲𝗿 𝗧𝗵𝗲 𝗖𝗵𝗮𝘁 𝗶𝘀 𝗯𝗹𝗮𝗰𝗸𝗹𝗶𝘀𝘁𝗲𝗱 𝗼𝗿 𝗻𝗼𝘁!!\n
+                 f"\n/update :- 𝗖𝗵𝗲𝗮𝗸 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗮𝘀𝘀𝗶𝘀𝘁𝗲𝗻𝘁!!\n"
+                 f"\n/clean :-  𝗦𝗲𝗲 𝗦𝘂𝗱𝗼 𝗟𝗶𝘀𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗯𝗼𝘁!!\n"
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
