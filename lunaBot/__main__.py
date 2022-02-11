@@ -437,7 +437,7 @@ def luna_about_callback(update, context):
                  [
                   InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴍᴅs🔯", callback_data="luna_support"),
                   InlineKeyboardButton(text="🔥ᴏᴡɴᴇʀ ᴄᴍᴅs🤍", callback_data="luna_aselole"),
-                  InlineKeyboardButton(text="♻️|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|²🤍", utl="https://t.me/DevuAssistant2"
+                  InlineKeyboardButton(text="♻️|ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ|²🤍", utl="https://t.me/DevuAssistant2"),
                  ],
                 [InlineKeyboardButton(text="Back", callback_data="luna_")]
                 ],   
