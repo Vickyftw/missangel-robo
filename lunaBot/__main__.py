@@ -98,7 +98,6 @@ HELP_STRINGS = """
 """
 
 DONATE_STRING = """NHI CHAHIYE DONATION GO ANYWERE LOL!!🙋‍♂️,\n SHINING OFFFFF && HATERS FMK OFF🌚,"""
-OYO_X = """https://telegra.ph/file/8f372955596999769429b.mp4"""
 
 
 IMPORTED = {}
@@ -846,10 +845,10 @@ def donate(update: Update, context: CallbackContext):
     bot = context.bot
     if chat.type == "private":
         update.effective_message.reply_text(
-            OYO_X, DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
+             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1963422158 and DONATION_LINK:
+        if OWNER_ID != 1996039846 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
