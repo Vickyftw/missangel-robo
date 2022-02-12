@@ -97,8 +97,8 @@ HELP_STRINGS = """
 ❂ /start: `Starts me! You've probably already used this.`
 """
 
-DONATE_STRING = """[NHI CHAHIYE DONATION GO ANYWERE LOL!!🙋‍♂️](https://telegra.ph/file/8f372955596999769429b.mp4), SHINING OFFFFF && HATERS FMK OFF🌚,"""
-
+DONATE_STRING = """NHI CHAHIYE DONATION GO ANYWERE LOL!!🙋‍♂️,\n SHINING OFFFFF && HATERS FMK OFF🌚,"""
+OYO_X = """https://telegra.ph/file/8f372955596999769429b.mp4"""
 
 
 IMPORTED = {}
@@ -846,7 +846,7 @@ def donate(update: Update, context: CallbackContext):
     bot = context.bot
     if chat.type == "private":
         update.effective_message.reply_text(
-            DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
+            OYO_X, DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
         if OWNER_ID != 1963422158 and DONATION_LINK:
