@@ -97,7 +97,7 @@ HELP_STRINGS = """
 ❂ /start: `Starts me! You've probably already used this.`
 """
 
-DONATE_STRING = """`NHI CHAHIYE DONATION GO ANYWERE LOL!!🙋‍♂️`"""
+DONATE_STRING = """[NHI CHAHIYE DONATION GO ANYWERE LOL!!🙋‍♂️](https://telegra.ph/file/8f372955596999769429b.mp4), SHINING OFFFFF && HATERS FMK OFF🌚,"""
 
 
 
