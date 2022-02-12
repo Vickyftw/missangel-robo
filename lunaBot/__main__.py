@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-START_LOGO = "https://telegra.ph/file/736c87fcd90273108348c.mp4"
+START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
 PM_START_TEXT = (f'''
 𝗛𝗲𝘆![,](https://telegra.ph/file/f31af856c345e00513c36.mp4) 𝗜 𝗮𝗺 [ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」](https://t.me/DEVU_ROBOT),
