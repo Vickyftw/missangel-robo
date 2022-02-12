@@ -449,7 +449,7 @@ def __stats__():
     )
 
 
-__mod_name__ = "🧛‍♂️ʙʟᴀᴄᴋʟɪsᴛ🧛"
+__mod_name__ = "ʙʟᴀᴄᴋʟɪsᴛ"
 
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
