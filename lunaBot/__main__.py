@@ -97,7 +97,7 @@ HELP_STRINGS = """
 ❂ /start: `Starts me! You've probably already used this.`
 """
 
-DONATE_STRING = """[My Mumma](https://t.me/sprinkles_17)"""
+DONATE_STRING = """`NHI CHAHIYE DONATION GO ANYWERE LOL!!🙋‍♂️`"""
 
 
 
