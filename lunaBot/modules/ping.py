@@ -74,13 +74,13 @@ def ping(update: Update, context: CallbackContext):
     msg = update.effective_message
 
     start_time = time.time()
-    message = msg.reply_text("🥲")
+    message = msg.reply_text("⚡")
     end_time = time.time()
     telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "[𝗢𝗠𝗙𝗢!!](https://telegra.ph/file/005e6d6c3eeaa5cbf3de2.png)\n"
+        "𝗢𝗠𝗙𝗢🤔!!\n"
         "<b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:</b> <code>{}</code>\n"
         "<b>sᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
