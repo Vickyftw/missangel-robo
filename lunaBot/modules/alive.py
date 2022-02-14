@@ -12,7 +12,7 @@ ALIBE_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 @MEMEK(pattern=("/alive"))
 async def awake(event):
   tai = event.sender.first_name
-  DEVU = f"**❄𝗛𝗼𝗶𝗶, 𝗜 𝗮𝗺 [⏤͟͟͞͞★ᴅᴇᴠᴜ➺☆「🇮🇳」](https://t.me/DEVU_ROBOT)𝗥𝗼𝗯𝗼𝘁!!❄** \n\n"
+  DEVU = f"❄𝗛𝗼𝗶𝗶, {message.from_user.mention()} 𝗜 𝗮𝗺 [⏤͟͟͞͞★ᴅᴇᴠᴜ➺☆「🇮🇳」](https://t.me/DEVU_ROBOT)𝗥𝗼𝗯𝗼𝘁!!❄ \n\n"
   DEVU += f"✘ **𝗜'𝗺 𝗪𝗼𝗿𝗸𝗶𝗻𝗴 𝗶𝗻 𝗪𝗲𝗹𝗹 𝗠𝗮𝗻𝗻𝗲𝗿!!** \n\n"
   DEVU += f"✘ **𝗛𝘂𝗶 𝗛𝘂𝗶 𝗠𝘆 𝗠𝗮𝘀𝘁𝗲𝗿 : [「𝗟𝗶𝗼 𝗟𝗶𝗼 𝗠𝘆 𝗠𝗮𝘀𝘁𝗲𝗿」](https://t.me/HYPER_AD17)** \n\n"
   DEVU += f"✘ **𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : {tlhver}** \n\n"
