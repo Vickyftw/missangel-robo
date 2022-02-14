@@ -656,8 +656,6 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(text="💝ᴅᴇᴠᴜ ᴍᴜsɪᴄ ᴄᴍᴅs💝", url="https://telegra.ph/%E1%B4%85%E1%B4%87%E1%B4%A0%E1%B4%9CMusic-02-11"),
                     ],
-                    [   InlineKeyboardButton(text="lol", callback_data=" help_back"),
-                    ],
                 ],
             ),
         )
