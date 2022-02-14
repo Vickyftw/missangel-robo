@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
-PM_START_TEXT = (f'''
+PM_START_TEXT = (f"""
 𝗛𝗲𝘆![,](https://telegra.ph/file/f31af856c345e00513c36.mp4) 𝗜 𝗮𝗺 [ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」](https://t.me/DEVU_ROBOT),
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
@@ -83,8 +83,7 @@ PM_START_TEXT = (f'''
  ​× *Uᴘᴛɪᴍᴇ:* `{}` 
  ​× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.* 
  ​────────────────────────
-☉ **𝗖𝗹𝗶𝗰𝗸 /help or !help 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
-''')
+☉ **𝗖𝗹𝗶𝗰𝗸 /help or !help 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**""")
 
 buttons = [
     [
