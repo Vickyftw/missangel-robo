@@ -442,7 +442,6 @@ def luna_about_callback(update, context):
                 [InlineKeyboardButton(text="Back", callback_data="luna_")]
                 ],   
             ),
-        )
     elif query.data == "luna_support":
         query.message.edit_text(
             text=f"──「 Admin CMD 」──\n"
