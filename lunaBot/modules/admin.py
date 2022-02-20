@@ -87,7 +87,7 @@ def promote(update: Update, context: CallbackContext) -> str:
             can_delete_messages=bot_member.can_delete_messages,
             can_invite_users=bot_member.can_invite_users,
             # can_promote_members=bot_member.can_promote_members,
-            can_restrict_members=bot_member.can_restrict_members,
+            # can_restrict_members=bot_member.can_restrict_members,
             can_pin_messages=bot_member.can_pin_messages,
         )
     except BadRequest as err:
@@ -160,13 +160,13 @@ def demote(update: Update, context: CallbackContext) -> str:
         bot.promoteChatMember(
             chat.id,
             user_id,
-            can_change_info=False,
-            can_post_messages=False,
-            can_edit_messages=False,
-            can_delete_messages=False,
-            can_invite_users=False,
+            can_change_info=True,
+            can_post_messages=True,
+            can_edit_messages=True,
+            can_delete_messages=True,
+            can_invite_users=True,
             can_restrict_members=False,
-            can_pin_messages=False,
+            can_pin_messages=True,
             can_promote_members=False,
         )
 
