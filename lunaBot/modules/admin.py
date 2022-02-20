@@ -102,7 +102,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         f"{html.escape(chat.title)}: \n"
         f"Sucessfully promoted **{user_member.user.first_name or user_id}**!\n\n"
         f"**New Admin** : {mention_html(user_member.user.id, user_member.user.first_name)}\n"
-        f"**Promoter** : {message.from_user.mention()}\n\n"
+        f"**Promoter** : {message.from_admin.mention()}\n\n"
         f"**Mze kro ab aur kya**"
     )
 
