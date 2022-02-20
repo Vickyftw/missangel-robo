@@ -165,9 +165,9 @@ def demote(update: Update, context: CallbackContext) -> str:
             can_edit_messages=True,
             can_delete_messages=True,
             can_invite_users=True,
-            can_restrict_members=False,
+            can_restrict_members=True,
             can_pin_messages=True,
-            can_promote_members=False,
+            can_promote_members=True,
         )
 
         bot.sendMessage(
