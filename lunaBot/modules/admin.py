@@ -102,8 +102,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         f"Sucessfully promoted <b>{user_member.user.first_name or user_id}</b>!\n\n"
         f"<b>New Admin:</b> {mention_html(user_member.user.id, user_member.user.first_name)}\n"
         f"<b>Promoter</b> {mention_html(user.id, user.first_name)}\n\n"
-        f"<b>Mze kro ab aur kya</b>"
-        parse_mode=ParseMode.HTML,
+        f"<b>Mze kro ab aur kya</b>",
     )
 
     log_message = (
