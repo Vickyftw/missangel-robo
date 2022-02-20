@@ -99,7 +99,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     bot.sendMessage(
         chat.id,
-        f"ᴘʀᴏᴍᴏᴛɪɴɢ ᴀ ᴜsᴇʀ ɪɴ <b>{chat.title}</b>\n\nɴᴇᴡ ᴀᴅᴍɪɴ: {mention_html(user_member.user.id, user_member.user.first_name)}\n\nᴘʀᴏᴍᴏᴛᴇʀ: {mention_html(user.id, user.first_name)}\n\n\nᴍᴢᴇ ᴋʀᴏ ᴀʙ ᴀᴜʀ ᴋʏᴀ😌",
+        f"❄ ᴘʀᴏᴍᴏᴛɪɴɢ ᴀ ᴜsᴇʀ ɪɴ ☢ <b>{chat.title}☢ ❄</b>\n\n✘ɴᴇᴡ ᴀᴅᴍɪɴ☆: 「{mention_html(user_member.user.id, user_member.user.first_name)}」\n✘ᴘʀᴏᴍᴏᴛᴇʀ☆: 「{mention_html(user.id, user.first_name)}」\n\n「☆ᴍᴢᴇ ᴋʀᴏ ᴀʙ ᴀᴜʀ ᴋʏᴀ😌☆」",
         parse_mode=ParseMode.HTML,
     )
 
@@ -172,7 +172,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
         bot.sendMessage(
             chat.id,
-            f"ᴅᴇᴍᴏᴛɪɴɢ ᴀ ᴜsᴇʀ ɪɴ <b>{chat.title}</b>\n\nɴᴇᴡ ᴀᴅᴍɪɴ: {mention_html(user_member.user.id, user_member.user.first_name)}\nᴘʀᴏᴍᴏᴛᴇʀ: {mention_html(user.id, user.first_name)}",
+            f"❄ ᴅᴇᴍᴏᴛɪɴɢ ᴀ ᴜsᴇʀ ɪɴ ☢<b>{chat.title}☢❄</b>\n\n✘ɴᴇᴡ ᴀᴅᴍɪɴ☆: 「{mention_html(user_member.user.id, user_member.user.first_name)}」\n✘ᴘʀᴏᴍᴏᴛᴇʀ☆: 「{mention_html(user.id, user.first_name)}」\n「sᴀᴅ ᴠʀᴏ ʙᴇᴛᴛᴇʀ ʟᴜᴄᴋ ɴᴇxᴛ ᴛɪᴍᴇ ᴊʙ ᴀᴅᴍɪɴ ᴋᴀ ᴍɴ ᴋʀᴇɢᴀ🥺😂」",
         parse_mode=ParseMode.HTML,
         )
 
