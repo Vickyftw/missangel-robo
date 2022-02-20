@@ -99,18 +99,18 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     bot.sendMessage(
         chat.id,
-        f"<b>{html.escape(chat.title)}:</b>\n"
-        f"Sucessfully promoted <b>{user_member.user.first_name or user_id}</b>!\n\n"
-        f"<b>New Admin:</b> {mention_html(user_member.user.id, user_member.user.first_name)}\n"
-        f"<b>Promoter</b> {mention_html(user.id, user.first_name)}\n\n"
-        f"<b>Mze kro ab aur kya</b>"
+        f"{html.escape(chat.title)}: \n"
+        f"Sucessfully promoted **{user_member.user.first_name or user_id}**!\n\n"
+        f"**New Admin** : {mention_html(user_member.user.id, user_member.user.first_name)}\n"
+        f"**Promoter** : {message.from_user.mention()}\n\n"
+        f"**Mze kro ab aur kya**"
     )
 
     log_message = (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"USER PROMOTED SUCCESSFULLY\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
+        f"<b>User:</b> {mention(user_member.user.id, user_member.user.first_name)}"
     )
 
     return log_message
