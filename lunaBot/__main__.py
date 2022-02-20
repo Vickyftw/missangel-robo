@@ -417,8 +417,9 @@ def luna_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_notes")]],),
+                [[InlineKeyboardButton(text="Back", callback_data="luna_notes")]],
             ),
+        )
 
     elif query.data == "luna_notes":
         query.message.edit_text(
@@ -441,6 +442,7 @@ def luna_about_callback(update, context):
                 [InlineKeyboardButton(text="Back", callback_data="luna_")]
                 ],   
             ),
+        )
     elif query.data == "luna_support":
         query.message.edit_text(
             text=f"──「 Admin CMD 」──\n"
