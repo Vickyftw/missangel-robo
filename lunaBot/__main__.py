@@ -373,6 +373,7 @@ def luna_about_callback(update, context):
                 ]
             ),
         )
+
     elif query.data == "luna_back":
         query.message.edit_text(
                 PM_START_TEXT,
@@ -401,7 +402,8 @@ def luna_about_callback(update, context):
                  ],
                 ],
              ),
-        )   
+        )
+   
     elif query.data == "luna_admin":
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──\n**"
@@ -412,14 +414,15 @@ def luna_about_callback(update, context):
             f"\n/playlist :- 𝗦𝗲𝗲 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗣𝗹𝗮𝘆𝗟𝗶𝘀𝘁\n"
             f"\n/lyrics :- 𝗦𝗲𝗮𝗿𝗰𝗵 𝗟𝘆𝗿𝗶𝗰𝘀 𝗼𝗳 𝗮𝗻𝘆 𝘀𝗼𝗻𝗴\n"
             f"\n/blacklistedchat :- 𝗖𝗵𝗲𝗰𝗸 𝗪𝗲𝗮𝘁𝗵𝗲𝗿 𝗧𝗵𝗲 𝗖𝗵𝗮𝘁 𝗶𝘀 𝗯𝗹𝗮𝗰𝗸𝗹𝗶𝘀𝘁𝗲𝗱 𝗼𝗿 𝗻𝗼𝘁!!\n"
-            f"\n/checkassistant :- 𝗖𝗵𝗲𝗮𝗸 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗮𝘀𝘀𝗶𝘀𝘁𝗲𝗻𝘁!!\n",
+            f"\n/checkassistant :- 𝗖𝗵𝗲𝗮𝗸 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗮𝘀𝘀𝗶𝘀𝘁𝗲𝗻𝘁!!\n"
             f"\n/alive - check bot is alive or not (fun cmd for user)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="luna_notes")]],
              ),
-        )   
+        )
+       
     elif query.data == "luna_notes":
         query.message.edit_text(
             text=f"ʜᴇʏ!, ɪ ᴀᴍ ᴅᴇᴠᴜ ʀᴏʙᴏᴛ\n\nᴄᴏɴᴛᴀɪɴɪɴɢ ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴏꜰ ᴍᴜsɪᴄ sʏsᴛᴇᴍ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ ʟᴀɢ ꜰʀᴇᴇ  ᴍᴜsɪᴄ\n\nsᴇᴇ  ʜᴇʀᴇ ʙᴇʟᴏᴡ ᴀᴅᴍɪɴ ɴᴅ ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs\nᴛᴏ ᴜsᴇ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ..!!",
@@ -442,6 +445,7 @@ def luna_about_callback(update, context):
                 ],   
             ),
         )
+
     elif query.data == "luna_support":
         query.message.edit_text(
             text=f"──「 Admin CMD 」──\n"
@@ -465,6 +469,7 @@ def luna_about_callback(update, context):
                 ]
             ),
         )
+
     elif query.data == "luna_credit":
         query.message.edit_text(
             text=f"──「 `Sudo CMD` 」──\n"
