@@ -400,8 +400,8 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
                  ],
                 ],
-            ),
-        )
+             ),
+        )   
     elif query.data == "luna_admin":
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──\n**"
@@ -418,9 +418,8 @@ def luna_about_callback(update, context):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="luna_notes")]],
-            ),
-        )
-
+             ),
+        )   
     elif query.data == "luna_notes":
         query.message.edit_text(
             text=f"ʜᴇʏ!, ɪ ᴀᴍ ᴅᴇᴠᴜ ʀᴏʙᴏᴛ\n\nᴄᴏɴᴛᴀɪɴɪɴɢ ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴏꜰ ᴍᴜsɪᴄ sʏsᴛᴇᴍ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ ʟᴀɢ ꜰʀᴇᴇ  ᴍᴜsɪᴄ\n\nsᴇᴇ  ʜᴇʀᴇ ʙᴇʟᴏᴡ ᴀᴅᴍɪɴ ɴᴅ ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs\nᴛᴏ ᴜsᴇ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ..!!",
