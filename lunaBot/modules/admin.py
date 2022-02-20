@@ -99,11 +99,8 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     bot.sendMessage(
         chat.id,
-        f"{html.escape(chat.title)}: \n"
-        f"Sucessfully promoted **{user_member.user.first_name or user_id}**!\n\n"
-        f"**New Admin** : {mention_html(user_member.user.id, user_member.user.first_name)}\n"
-        f"**Promoter** : {message.from_admin.mention()}\n\n"
-        f"**Mze kro ab aur kya**"
+        f"ᴘʀᴏᴍᴏᴛɪɴɢ ᴀ ᴜsᴇʀ ɪɴ <b>{chat.title}</b>\n\nɴᴇᴡ ᴀᴅᴍɪɴ: {mention_html(user_member.user.id, user_member.user.first_name)}\n\nᴘʀᴏᴍᴏᴛᴇʀ: {mention_html(user.id, user.first_name)}\n\n\nᴍᴢᴇ ᴋʀᴏ ᴀʙ ᴀᴜʀ ᴋʏᴀ😌",
+        parse_mode=ParseMode.HTML,
     )
 
     log_message = (
@@ -175,8 +172,8 @@ def demote(update: Update, context: CallbackContext) -> str:
 
         bot.sendMessage(
             chat.id,
-            f"Sucessfully demoted <b>{user_member.user.first_name or user_id}</b>!",
-            parse_mode=ParseMode.HTML,
+            f"ᴅᴇᴍᴏᴛɪɴɢ ᴀ ᴜsᴇʀ ɪɴ <b>{chat.title}</b>\n\nɴᴇᴡ ᴀᴅᴍɪɴ: {mention_html(user_member.user.id, user_member.user.first_name)}\nᴘʀᴏᴍᴏᴛᴇʀ: {mention_html(user.id, user.first_name)}",
+        parse_mode=ParseMode.HTML,
         )
 
         log_message = (
