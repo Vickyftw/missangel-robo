@@ -78,11 +78,11 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
 PM_START_TEXT = (f"""
-𝗛𝗲𝘆![,]() 𝗜 𝗮𝗺 [ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」](https://t.me/DEVU_ROBOT),
+𝗛𝗲𝘆![,]() 𝗜 𝗮𝗺 [𝙼𝚒𝚜𝚜𝙰𝚗𝚐𝚎𝚕「⚜️」](https://t.me/AngelxRobot),
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
 ️●───────❚❚───────●
-☉ **𝗖𝗹𝗶𝗰𝗸 /help or !help 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
+☉ **𝗖𝗹𝗶𝗰𝗸 /help or !help or 𝗧𝗮𝗽 𝗢𝗻 𝗵𝗲𝗹𝗽 𝗯𝘂𝘁𝘁𝗼𝗻, 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
 """)
 
 buttons = [
@@ -93,6 +93,9 @@ buttons = [
         InlineKeyboardButton(text="☆•𝙰𝚋𝚘𝚞𝚝 𝙼𝚎•☆", callback_data="luna_"),
         InlineKeyboardButton(text="🚸𝙷𝚎𝚕𝚙&&𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜🚸", callback_data="help_back"),
     ],
+    [  
+        InlineKeyboardButton(text="𝙰𝚗𝚐𝚎𝚕 𝚂𝚞𝚙𝚙𝚘𝚛𝚝🔥", callback_data="luna_angjay"),
+    ],
 ]
 
 
@@ -101,7 +104,7 @@ HELP_STRINGS = """
 ❂ /start: `Starts me! You've probably already used this.`
 """
 
-DONATE_STRING = """NHI CHAHIYE DONATION GO ANYWERE LOL!!🙋‍♂️,\n SHINING OFFFFF && HATERS FMK OFF🌚,"""
+DONATE_STRING = """IF U WANT TO DONATE THEN JUST JOIN @angelsupports\nOr U can donate By just Clicking [Here](https://t.me/ThomasShebLYY),"""
 
 
 IMPORTED = {}
@@ -591,19 +594,22 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_angjay":
         query.message.edit_text(
-            text=f"Luna is a powerful bot for managing groups with additional features.\n"
-              f"\nLuna's Licensed Under The GNU (General Public License v3.0)\n"
-              f"\nIf you have any question about Luna,"
+            text=f"[Angel 💝](https://t.me/AngelxRobot) , is a powerful bot for managing groups with additional features.\n"
+              f"\nIf you have any question about Angel,"
               f"\nreach us at Support Chat.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="Back", callback_data="luna_puqi"),
-                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/ZZZZZZ"),
-                  ]
-                ]
+                     InlineKeyboardButton(text="𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝙲𝚑𝚊𝚝🤍", url="https://t.me/angelsupports"),
+                     InlineKeyboardButton(text="𝙰𝚗𝚐𝚎𝚕 𝚄𝚙𝚍𝚊𝚝𝚎𝚜⚜️", url=f"https://t.me/angelxupdates"),
+                  ],
+                  [
+                     InlineKeyboardButton(text="𝙶𝚋𝚊𝚗 𝙻𝚘𝚐𝚜☢︎︎", url="https://t.me/angellogs"),
+                     InlineKeyboardButton(text="𝙼𝚊𝚒𝚗 𝙷𝚞𝚋☢︎᯽", url="https://t.me/SILENT_BOTS"),
+                  ],
+                ],
             ),
         )   
 
