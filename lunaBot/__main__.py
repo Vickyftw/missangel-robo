@@ -1,4 +1,5 @@
 #Edited By Hyper real cradit goes to luna robo!!
+#Edited By cradit @DEVU_ROBOT || @HYPER_AD17 || github.com/HYPER-AD17
 
 import importlib
 import time
@@ -77,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
 PM_START_TEXT = (f"""
-𝗛𝗲𝘆![,](https://telegra.ph/file/f31af856c345e00513c36.mp4) 𝗜 𝗮𝗺 [ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」](https://t.me/DEVU_ROBOT),
+𝗛𝗲𝘆![,]() 𝗜 𝗮𝗺 [ᴅᴇᴠᴜ ʀᴏʙᴏᴛ「⚜️」](https://t.me/DEVU_ROBOT),
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
 ️●───────❚❚───────●
@@ -86,10 +87,11 @@ PM_START_TEXT = (f"""
 
 buttons = [
     [
-        InlineKeyboardButton(text="❄ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.!! ❄", url="http://t.me/DEVU_ROBOT?startgroup=true"),
+        InlineKeyboardButton(text="❄ 𝙰𝚍𝚍 𝙼𝚎 𝚒𝚗 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙.!! ❄", url="https://t.me/AngelxRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="❇️☆•ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ•☆❇️", callback_data="luna_"),
+        InlineKeyboardButton(text="☆•𝙰𝚋𝚘𝚞𝚝 𝙼𝚎•☆", callback_data="luna_"),
+        InlineKeyboardButton(text="🚸𝙷𝚎𝚕𝚙&&𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜🚸", callback_data="help_back"),
     ],
 ]
 
@@ -363,13 +365,13 @@ def luna_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/SCILENT_BOT"
+                            text="𝙰𝚗𝚐𝚎𝚕 𝚂𝚞𝚙𝚙𝚘𝚛𝚝", url="https://t.me/angelsupports"
                         ),
-                        InlineKeyboardButton(text="♻️ᴏᴡɴᴇʀ🤍", url="https://github.com/HYPER-AD17"),
+                        InlineKeyboardButton(text="♻️𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝚄𝚙𝚍𝚊𝚝𝚎𝚜🤍", url="https://t.me/SILENT_BOTS"),
                     ],
                     [
-                        InlineKeyboardButton(text="💘ᴅᴇᴠᴜ ᴍᴜsɪᴄ💟", callback_data="luna_notes"),
-                        InlineKeyboardButton(text="🧑‍💻ᴅᴇᴠs&ᴄᴏᴍᴍᴀɴᴅs🆘", callback_data="luna_basichelp"),
+                        InlineKeyboardButton(text="💘𝙼𝚞𝚜𝚒𝚌💟", callback_data="luna_notes"),
+                        InlineKeyboardButton(text="🧑‍💻𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜🆘", callback_data="luna_basichelp"),
                     ],
                     [InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back")],
                 ]
@@ -392,13 +394,8 @@ def luna_about_callback(update, context):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="ᴅᴜᴅᴜ❤️", url="https://t.me/Itsme_Dream_AD_1713"),
-                    InlineKeyboardButton(text="ʙᴜʙᴜ😌", url="https://t.me/HYPER_AD17"),
-                 ],
-                 [  
-                    InlineKeyboardButton(text="🚸ʜᴇʟᴘ&ᴍᴏᴅᴜʟᴇ🚸", callback_data="help_back"),
-                 ],
+                    InlineKeyboardButton(text="「🇮🇳」ᴢᴇɴ➺", callback_data="luna_asi"),
+                    InlineKeyboardButton(text="「🇮🇳」「ʜʏᴘᴇʀ✰」", callback_data="luna_asu"),
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
                  ],
@@ -438,10 +435,6 @@ def luna_about_callback(update, context):
                  [
                   InlineKeyboardButton(text="💘sᴜᴅᴏ ᴄᴍᴅ🧑‍💻", callback_data="luna_credit"),
                   InlineKeyboardButton(text="🔥ᴏᴡɴᴇʀ ᴄᴍᴅs🤍", callback_data="luna_aselole"),
-                 ],
-                 [
-                  InlineKeyboardButton(text="💘ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ1🤍", url="https://t.me/DevuAssistant"),
-                  InlineKeyboardButton(text="♻️ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ2🤍", url="https://t.me/DevuAssistant2"),
                  ],
                 [InlineKeyboardButton(text="Back", callback_data="luna_")]
                 ],   
@@ -523,34 +516,53 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_asu":
         query.message.edit_text(
-            text=f"｢ Admin Permissions 」\n"
-                     f"\nTo avoid slowing down, Devu caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Luna will only find out ~10 minutes later.\n"
-                    f"\nIf you want to update them immediately, you can use the /admincache or /reload command, that'll force Luna to check who the admins are again and their permissions\n"
-                    f"\nIf you are getting a message saying:\nYou must be this chat administrator to perform this action!\n"
-                    f"\nThis has nothing to do with Devu's rights; this is all about YOUR permissions as an admin. Devu respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Luna. Similarly, to change Devu settings, you need to have the Change group info permission.\n"
-                    f"\nThe message very clearly states that you need these rights - not Devu.",
+            text=f"｢ ⏤͟͟͞͞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋʀɪᴘ↬✘「ʜʏρєя🇮🇳кιиɢ」✘𑲭𑲭 」\n"
+                     f"𝙰𝚋𝚘𝚞𝚝 𝙼𝚢 𝙳𝚎𝚟♡︎"
+                     f"𝙽𝚊𝚖𝚎:- 𝙷𝚢𝚙𝚎𝚛 𝙺𝚒𝚗𝚐✩"
+                     f"𝙿𝚛𝚘𝚏𝚒𝚕𝚎:- [𝙲𝚘𝚘𝚕 𝙱𝚘𝚒☻︎](https://t.me/HYPER_AD17)"
+                     f"𝚂𝚝𝚊𝚝𝚞𝚜:- 𝚄𝚗𝚎𝚍𝚞𝚌𝚊𝚝𝚎𝚍 𝚕𝚘𝚕😒😒([𝙽𝚘𝚗𝚎 𝚘𝚏 𝚄𝚛 𝙱𝚞𝚜𝚒𝚗𝚎𝚜𝚜🤨](https://telegra.ph/file/d2f3db12a30b13534f12e.mp4))",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [InlineKeyboardButton(text="Back", callback_data="luna_aselole")]
+                [
+                 [
+                    InlineKeyboardButton(text="𝙷𝚎𝚟𝚎𝚗♡︎", url="t.me/DEVX_OWNER"),
+                    InlineKeyboardButton(text="𝙶𝚒𝚝𝙷𝚞𝚋✰", url="https://github.com/HYPER-AD17"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="𝙼𝚊𝚒𝚗-𝙰𝚌𝚌𝚘𝚞𝚗𝚝✩", url="t.me/HYPER_AD17"),
+                    InlineKeyboardButton(text="𝙱𝚊𝚌𝚔-𝚄𝙿 𝙰𝚌𝚌.✩", url="t.me/AD_1317"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="luna_basichelp"),
+                 ],
+                ],
             ),
         )
 
     elif query.data == "luna_asi":
         query.message.edit_text(
-            text=f"｢ Anti-Spam Settings 」\n"
-                     f"\nAntispam: "
-                     f"\nBy enabling this, you can protect your groups free from scammers/spammers.\nRun /antispam on in your chat to enable.\nAppeal Chat: @ZZZZZ\n"
-                     f"\n✪ Anti-Flood allows you to keep your chat clean from flooding."
-                     f"\n✪ With the help of Blaclists you can blacklist words,sentences and stickers which you don't want to be used by group members."
-                     f"\n✪ By enabling Reports, admins get notified when users reports in chat."
-                     f"\n✪ Locks allows you to lock/restrict some comman items in telegram world."
-                     f"\n✪ Warnings allows to warn users and set auto-warns. "
-                     f"\n✪ Welcome Mute helps you prevent spambots or users flooding/spamming your group. Checl Greetings for more info",
+            text=f"｢ ★🇷ʏᴢᴇɴ➺☆「🇮🇳」ㅤㅤㅤㅤㅤ ㅤㅤㅤ ㅤㅤ ✪ 」\n"
+                     f"𝙰𝚋𝚘𝚞𝚝 𝙼𝚢 𝙳𝚎𝚟𝚕𝚘𝚙𝚎𝚛♡︎"
+                     f"𝙽𝚊𝚖𝚎:- 🇷ʏᴢᴇɴ➺「🇮🇳」✩"
+                     f"𝙿𝚛𝚘𝚏𝚒𝚕𝚎:- [𝙿𝚒𝚛𝚘 𝙱𝚘𝚒☻︎](https://t.me/HYPER_AD17)"
+                     f"𝚂𝚝𝚊𝚝𝚞𝚜:- 𝚄𝚗𝚎𝚍𝚞𝚌𝚊𝚝𝚎𝚍 𝚕𝚘𝚕😒😒([𝙽𝚘𝚗𝚎 𝚘𝚏 𝚄𝚛 𝙱𝚞𝚜𝚒𝚗𝚎𝚜𝚜🤨](https://telegra.ph/file/d2f3db12a30b13534f12e.mp4))",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_aselole")]]
+                [
+                 [
+                    InlineKeyboardButton(text="𝙷𝚎𝚟𝚎𝚗♡︎", url="https://t.me/aboutryzen"),
+                    InlineKeyboardButton(text="𝙶𝚒𝚝𝙷𝚞𝚋✰", url="https://github.com/Vickyftw"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="𝙼𝚊𝚒𝚗-𝙰𝚌𝚌𝚘𝚞𝚗𝚝✩", url="https://t.me/ThomasShebLYY"),
+                    InlineKeyboardButton(text="𝙸𝚗𝚜𝚝𝚊𝙶𝚛𝚊𝚖✩", url="https://www.instagram.com/ig._.vicky_op/"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="luna_basichelp"),
+                 ],
+                ],
             ),
         )
 
@@ -657,7 +669,7 @@ def get_help(update: Update, context: CallbackContext):
                         )
                     ],
                     [
-                        InlineKeyboardButton(text="💝ᴅᴇᴠᴜ ᴍᴜsɪᴄ ᴄᴍᴅs💝", url="https://telegra.ph/%E1%B4%85%E1%B4%87%E1%B4%A0%E1%B4%9CMusic-02-11"),
+                        InlineKeyboardButton(text="𝙼𝚞𝚜𝚒𝚌»💝", url="https://telegra.ph/%E1%B4%85%E1%B4%87%E1%B4%A0%E1%B4%9CMusic-02-11"),
                     ],
                 ],
             ),
