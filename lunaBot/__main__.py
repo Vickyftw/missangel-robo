@@ -392,20 +392,18 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_basichelp":
         query.message.edit_text(
-            text=f"ᴜᴍᴍ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴇ ᴍʏ ꜰᴀᴛʜᴇʀ\n"
-                     f"ᴍᴏᴛʜᴇʀ !! ʟᴏʟ. \n"
-                     f"ʜᴇʀᴇ ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ \n"
-                     f"ꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏ ʜᴇʀᴇ .!!",
+            text=f'''ᴜᴍᴍ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴇ ᴍʏ ꜰᴀᴛʜᴇʀ && ᴍᴏᴛʜᴇʀ !! ʟᴏʟ. \n\nʜᴇʀᴇ ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ \n\nꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏ ʜᴇʀᴇ .!!''',
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton(text="🇮🇳-ᴢᴇɴ➺", callback_data="luna_asi"),
                     InlineKeyboardButton(text="🇮🇳-ʜʏᴘᴇʀ✰", callback_data="luna_asu"),
+                ],
+                [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
                 ],
              ),
-        )
    
     elif query.data == "luna_admin":
         query.message.edit_text(
