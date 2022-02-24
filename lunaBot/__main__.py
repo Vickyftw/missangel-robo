@@ -78,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
 PM_START_TEXT = (f"""
-𝗛𝗲𝘆![,]() 𝗜 𝗮𝗺 [𝙼𝚒𝚜𝚜𝙰𝚗𝚐𝚎𝚕「⚜️」](https://t.me/AngelxRobot),
+𝗛𝗲𝘆![,](https://telegra.ph/file/0e9c978b0635cc3cef507.mp4) 𝗜 𝗮𝗺 [𝙼𝚒𝚜𝚜𝙰𝚗𝚐𝚎𝚕「⚜️」](https://t.me/AngelxRobot),
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
 `𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
 ️●───────❚❚───────●
@@ -392,14 +392,17 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_basichelp":
         query.message.edit_text(
-            text=f'''ᴜᴍᴍ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴇ ᴍʏ ꜰᴀᴛʜᴇʀ && ᴍᴏᴛʜᴇʀ !! ʟᴏʟ. \n\nʜᴇʀᴇ ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ \n\nꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏ ʜᴇʀᴇ .!!''',
+            text=f"ᴜᴍᴍ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴇ ᴍʏ ꜰᴀᴛʜᴇʀ\n"
+                     f"ᴍᴏᴛʜᴇʀ !! ʟᴏʟ. \n"
+                     f"ʜᴇʀᴇ ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ \n"
+                     f"ꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏ ʜᴇʀᴇ .!!",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    InlineKeyboardButton(text="「🇮🇳」ᴢᴇɴ➺", callback_data="luna_asi"),
-                    InlineKeyboardButton(text="「🇮🇳」「ʜʏᴘᴇʀ✰」", callback_data="luna_asu"),
-                 [
+                    InlineKeyboardButton(text="🇮🇳-ᴢᴇɴ➺", callback_data="luna_asi"),
+                    InlineKeyboardButton(text="🇮🇳-ʜʏᴘᴇʀ✰", callback_data="luna_asu"),
+                 
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
                  ],
                 ],
