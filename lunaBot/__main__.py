@@ -78,23 +78,23 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
 PM_START_TEXT = (f"""
-𝗛𝗲𝘆![,](https://telegra.ph/file/0e9c978b0635cc3cef507.mp4) 𝗜 𝗮𝗺 [𝙼𝚒𝚜𝚜𝙰𝚗𝚐𝚎𝚕「⚜️」](https://t.me/AngelxRobot),
+ʜᴇʏ ![,](https://telegra.ph/file/0e9c978b0635cc3cef507.mp4) ɪ ᴀᴍ [𝘔𝘪𝘴𝘴 𝘈𝘯𝘨𝘦𝘭「👸🏼」](https://t.me/AngelxRobot),
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
-`𝗜'𝗺 𝗩𝗲𝗿𝘆 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹𝗹 𝗠𝗮𝗻𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 && 𝗧𝗿𝘂𝘀𝘁𝗲𝗱 𝗥𝗼𝗯𝗼𝘁 𝗪𝗶𝘁𝗵 𝗼𝘀𝗺 𝗺𝗼𝗱𝘂𝗹𝗲𝘀.♻️`
+`⚡️ɪ ᴍ ᴠᴇʀʏ ꜰᴀꜱᴛᴇꜱᴛ ᴀɴᴅ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ꜰᴇᴀᴛᴜʀᴇꜱ⚡️`
 ️●───────❚❚───────●
 ☉ **𝗖𝗹𝗶𝗰𝗸 /help or !help or 𝗧𝗮𝗽 𝗢𝗻 𝗵𝗲𝗹𝗽 𝗯𝘂𝘁𝘁𝗼𝗻, 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
 """)
 
 buttons = [
     [
-        InlineKeyboardButton(text="❄ 𝙰𝚍𝚍 𝙼𝚎 𝚒𝚗 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙.!! ❄", url="https://t.me/AngelxRobot?startgroup=true"),
+        InlineKeyboardButton(text="💞ᴛᴀᴋᴇ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴘ!!💞!!", url="https://t.me/AngelxRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="☆•𝙰𝚋𝚘𝚞𝚝 𝙼𝚎•☆", callback_data="luna_"),
-        InlineKeyboardButton(text="🚸𝙷𝚎𝚕𝚙&&𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜🚸", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴍᴇ 😎", callback_data="luna_"),
+        InlineKeyboardButton(text="🤔 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 📕", callback_data="help_back"),
     ],
     [  
-        InlineKeyboardButton(text="𝙰𝚗𝚐𝚎𝚕 𝚂𝚞𝚙𝚙𝚘𝚛𝚝🔥", callback_data="luna_angjay"),
+        InlineKeyboardButton(text="🔥ᴀɴɢᴇʟ ꜱᴜᴘᴘᴏʀᴛᴢ🔥", callback_data="luna_angjay"),
     ],
 ]
 
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/SCILENCE_SUPPORT")]]
+                    [InlineKeyboardButton(text="♻️ᴜᴘᴅᴀᴛᴇꜱ♻️", url="https://t.me/angelxupdates")]]
             ),
         )
         
@@ -370,11 +370,11 @@ def luna_about_callback(update, context):
                         InlineKeyboardButton(
                             text="𝙰𝚗𝚐𝚎𝚕 𝚂𝚞𝚙𝚙𝚘𝚛𝚝", callback_data="luna_angjay"
                         ),
-                        InlineKeyboardButton(text="♻️𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 𝚄𝚙𝚍𝚊𝚝𝚎𝚜🤍", url="https://t.me/SILENT_BOTS"),
+                        InlineKeyboardButton(text="♻️ᴏꜰꜰɪᴄɪᴀʟ ᴜᴘᴅᴀᴛᴇꜱ🤍", url="https://t.me/SILENT_BOTS"),
                     ],
                     [
-                        InlineKeyboardButton(text="💘𝙼𝚞𝚜𝚒𝚌💟", callback_data="luna_notes"),
-                        InlineKeyboardButton(text="🧑‍💻𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜🆘", callback_data="luna_basichelp"),
+                        InlineKeyboardButton(text="💘🏝ᴍᴜꜱɪᴄ🎧💟", callback_data="luna_notes"),
+                        InlineKeyboardButton(text="👨🏻‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ👨🏼‍🔧", callback_data="luna_basichelp"),
                     ],
                     [InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back")],
                 ]
@@ -432,7 +432,7 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton(text="💝ʙᴀsɪᴄ ᴄᴍᴅs💝", callback_data="luna_admin"),
+                  InlineKeyboardButton(text="💝ʙᴀꜱɪᴄ ᴄᴍᴅꜱ💝", callback_data="luna_admin"),
                   InlineKeyboardButton(text="🔯ᴀᴅᴍɪɴ ᴄᴍᴅs🔯", callback_data="luna_support"),
                  ],
                  [
@@ -602,12 +602,12 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝙲𝚑𝚊𝚝🤍", url="https://t.me/angelsupports"),
-                     InlineKeyboardButton(text="𝙰𝚗𝚐𝚎𝚕 𝚄𝚙𝚍𝚊𝚝𝚎𝚜⚜️", url=f"https://t.me/angelxupdates"),
+                     InlineKeyboardButton(text="🥂ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ🥂", url="https://t.me/angelsupports"),
+                     InlineKeyboardButton(text="ᴀɴɢᴇʟ ᴜᴘᴅᴀᴛᴇꜱ🧚‍♀️", url=f"https://t.me/angelxupdates"),
                   ],
                   [
-                     InlineKeyboardButton(text="𝙶𝚋𝚊𝚗 𝙻𝚘𝚐𝚜☢︎︎", url="https://t.me/angellogs"),
-                     InlineKeyboardButton(text="𝙼𝚊𝚒𝚗 𝙷𝚞𝚋☢︎᯽", url="https://t.me/SILENT_BOTS"),
+                     InlineKeyboardButton(text="📯ɢʙᴀɴ ʟᴏɢꜱ🧨", url="https://t.me/angellogs"),
+                     InlineKeyboardButton(text="ᴍᴀɪɴ ʜᴜʙ❗️", url="https://t.me/SILENT_BOTS"),
                   ],
                   [ 
                      InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="luna_"),
@@ -678,7 +678,7 @@ def get_help(update: Update, context: CallbackContext):
                         )
                     ],
                     [
-                        InlineKeyboardButton(text="𝙼𝚞𝚜𝚒𝚌»💝", url="https://telegra.ph/%E1%B4%85%E1%B4%87%E1%B4%A0%E1%B4%9CMusic-02-11"),
+                        InlineKeyboardButton(text="ᴍᴜꜱɪᴄ»💝", url="https://telegra.ph/%E1%B4%85%E1%B4%87%E1%B4%A0%E1%B4%9CMusic-02-11"),
                     ],
                 ],
             ),
