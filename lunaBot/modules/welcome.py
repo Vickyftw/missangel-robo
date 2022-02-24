@@ -190,7 +190,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "𝗪𝗼𝘄 𝗠𝘆 𝗳𝗮𝘁𝗵𝗲𝗿 𝗷𝘂𝘀𝘁 𝗷𝗼𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽.\n\n• @DEVX_OWNER", reply_to_message_id=reply
+                    "😳 ᴍʏ ʙᴀʙᴇ ʜᴀꜱ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ɢʀᴘ❕「 @ThomasShebLYY  」 🤗 ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ ʙᴀʙʏ ᴛɪꜱ ɢʀᴏᴜᴘ ɪᴢ ᴜɴᴅᴇʀ ᴍᴏɪ ᴄᴏɴᴛʀᴏʟ 😈⚡️\n\n• ", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -202,7 +202,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Be cool! A member of the Heroes Association just joined.",
+                    "ʙᴇ ᴄᴏᴏʟ ! ᴀ ᴍᴇᴍʙᴇʀ ᴏꜰ ᴛʜᴇ ʜᴇʀᴏᴇꜱ ᴀꜱꜱᴏᴄɪᴀᴛɪᴏɴ ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ 🔥🌚.",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -215,7 +215,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Whoa! A Dragon disaster just joined! Stay Alert!",
+                    "ᴡʜᴏᴀ! 🐲 ᴀ ᴅʀᴀɢᴏɴ ᴅɪꜱᴀꜱᴛᴇʀ ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ! ꜱᴛᴀʏ ᴀʟᴇʀᴛ! 😈🔥",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -241,7 +241,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "Roar! A Tiger disaster just joined!", reply_to_message_id=reply
+                    "ʀᴏᴀʀ ! ᴀ ᴛɪɢᴇʀ ᴅɪꜱᴀꜱᴛᴇʀ ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ! 🐯🔥", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -253,7 +253,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "Awoo! A Wolf disaster just joined!", reply_to_message_id=reply
+                    "ᴀᴡᴏᴏ! ᴀ ᴡᴏʟꜰ ᴅɪꜱᴀꜱᴛᴇʀ ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ! 🐺🔥", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -271,7 +271,7 @@ def new_member(update: Update, context: CallbackContext):
                                 {
                                     InlineKeyboardButton(
                                         text="🔥ᴍʏ ʜᴏᴍᴇ!🔥",
-                                        url="https://t.me/SCILENT_BOTS"),
+                                        url="https://t.me/angelsupports"),
                                 }
                             ]
                         ),
