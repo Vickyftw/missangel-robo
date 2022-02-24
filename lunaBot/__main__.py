@@ -77,12 +77,12 @@ def get_readable_time(seconds: int) -> str:
 
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
-PM_START_TEXT = (f"""
-ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/2e7b5d784a58766d7cd17.mp4] , ɪᴍ [🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱](https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+PM_START_TEXT = """
+ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/2e7b5d784a58766d7cd17.mp4) , ɪᴍ [🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱](https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! 👸🏼✨❤️
 ❕ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ ❕
-""")
+"""
 
 buttons = [
     [
@@ -377,16 +377,13 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            text="𝙰𝚗𝚐𝚎𝚕 𝚂𝚞𝚙𝚙𝚘𝚛𝚝", callback_data="luna_angjay"
-                        ),
+                        InlineKeyboardButton(text="👨🏻‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ👨🏼‍🔧", callback_data="luna_basichelp"),
                         InlineKeyboardButton(text="♻️ᴏꜰꜰɪᴄɪᴀʟ ᴜᴘᴅᴀᴛᴇꜱ🤍", url="https://t.me/SILENT_BOTS"),
                     ],
                     [
                         InlineKeyboardButton(text="🏝ᴍᴜꜱɪᴄ🎧", callback_data="luna_notes"),
-                        InlineKeyboardButton(text="👨🏻‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ👨🏼‍🔧", callback_data="luna_basichelp"),
+                        InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back"),
                     ],
-                    [InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back")],
                 ]
             ),
         )
@@ -555,10 +552,10 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_asi":
         query.message.edit_text(
-            text=f"🇷ʏᴢᴇɴ➺☆「🇮🇳」ㅤㅤㅤㅤㅤ ㅤㅤㅤ ㅤㅤ ✪ 」"
+            text=f"🇷ʏᴢᴇɴ➺☆「🇮🇳」✪ 」"
                      f"𝙰𝚋𝚘𝚞𝚝 𝙼𝚢 𝙳𝚎𝚟𝚕𝚘𝚙𝚎𝚛♡︎"
                      f"𝙽𝚊𝚖𝚎:- 🇷ʏᴢᴇɴ➺「🇮🇳」✩"
-                     f"𝙿𝚛𝚘𝚏𝚒𝚕𝚎:- [𝙿𝚒𝚛𝚘 𝙱𝚘𝚒☻︎](https://t.me/HYPER_AD17)"
+                     f"𝙿𝚛𝚘𝚏𝚒𝚕𝚎:- 𝙿𝚒𝚛𝚘 𝙱𝚘𝚒☻︎"
                      f"𝚂𝚝𝚊𝚝𝚞𝚜:- 𝚄𝚗𝚎𝚍𝚞𝚌𝚊𝚝𝚎𝚍 𝚕𝚘𝚕😒😒([𝙽𝚘𝚗𝚎 𝚘𝚏 𝚄𝚛 𝙱𝚞𝚜𝚒𝚗𝚎𝚜𝚜🤨](https://telegra.ph/file/d2f3db12a30b13534f12e.mp4))",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -620,7 +617,7 @@ def luna_about_callback(update, context):
                      InlineKeyboardButton(text="ᴍᴀɪɴ ʜᴜʙ❗️", url="https://t.me/SILENT_BOTS"),
                   ],
                   [ 
-                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="luna_"),
+                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="luna_back"),
                   ],
                 ],
             ),
