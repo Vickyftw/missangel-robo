@@ -86,15 +86,15 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="sᴜᴍᴍᴏɴ ᴍᴇ💞!!", url="https://t.me/AngelxRobot?startgroup=true"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛᴢ🔥", callback_data="luna_angjay"),
+        InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs🧑‍💻", url="https://t.me/AngelxRobot?start=help"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛᴢ🔥", callback_data="luna_angjay"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ😎", callback_data="luna_"),
-        InlineKeyboardButton(text="ʜᴇʟᴘ📕", callback_data="help_back"),
+        InlineKeyboardButton(text="Aʙᴏᴜᴛ😎", callback_data="luna_"),
+        InlineKeyboardButton(text="Hᴇʟᴘ📕", callback_data="help_back"),
     ],
     [  
-        InlineKeyboardButton(text="ᴄᴍᴅs🧑‍💻", url="https://t.me/AngelxRobot?start=help"), 
+        InlineKeyboardButton(text="Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ💞!!", url="https://t.me/AngelxRobot?startgroup=true"),
     ],
 ]
 
