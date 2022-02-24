@@ -78,11 +78,10 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
 PM_START_TEXT = (f"""
-ʜᴇʏ ![,](https://telegra.ph/file/0e9c978b0635cc3cef507.mp4) ɪ ᴀᴍ [𝘔𝘪𝘴𝘴 𝘈𝘯𝘨𝘦𝘭「👸🏼」](https://t.me/AngelxRobot),
-️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
-`⚡️ɪ ᴍ ᴠᴇʀʏ ꜰᴀꜱᴛᴇꜱᴛ ᴀɴᴅ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ꜰᴇᴀᴛᴜʀᴇꜱ⚡️`
-️●───────❚❚───────●
-☉ **𝗖𝗹𝗶𝗰𝗸 /help or !help or 𝗧𝗮𝗽 𝗢𝗻 𝗵𝗲𝗹𝗽 𝗯𝘂𝘁𝘁𝗼𝗻, 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼.**
+ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/2e7b5d784a58766d7cd17.mp4], ɪᴍ 🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱 (https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! 👸🏼✨❤️
+❕ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ ❕
 """)
 
 buttons = [
@@ -101,7 +100,17 @@ buttons = [
 
 HELP_STRINGS = """
 **Main commands:**
-❂ /start: `Starts me! You've probably already used this.`
+**✪ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ✪
+┏ /start
+┃sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
+┣/help
+┃ᴘᴍ's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
+┣ /help <module name>
+┃ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
+┗ /settings
+╭─⊸➢ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs.
+🤍
+╰─⊸➢ᴊᴏɪɴ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ʀᴇᴘᴏʀᴛ ᴛʜᴇ ᴇʀʀᴏʀꜱ @angelsupports ™**[🎀](https://telegra.ph/file/a384a9a5d86c352a46f38.png)"""`
 """
 
 DONATE_STRING = """IF U WANT TO DONATE THEN JUST JOIN @angelsupports\nOr U can donate By just Clicking [Here](https://t.me/ThomasShebLYY),"""
@@ -215,7 +224,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_LOGO, caption= "☆ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\n☆".format(
+            START_LOGO, caption= "☆ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@angelsupports".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -373,7 +382,7 @@ def luna_about_callback(update, context):
                         InlineKeyboardButton(text="♻️ᴏꜰꜰɪᴄɪᴀʟ ᴜᴘᴅᴀᴛᴇꜱ🤍", url="https://t.me/SILENT_BOTS"),
                     ],
                     [
-                        InlineKeyboardButton(text="💘🏝ᴍᴜꜱɪᴄ🎧💟", callback_data="luna_notes"),
+                        InlineKeyboardButton(text="🏝ᴍᴜꜱɪᴄ🎧", callback_data="luna_notes"),
                         InlineKeyboardButton(text="👨🏻‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ👨🏼‍🔧", callback_data="luna_basichelp"),
                     ],
                     [InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_back")],
@@ -392,7 +401,7 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_basichelp":
         query.message.edit_text(
-            text=f'''ᴜᴍᴍ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴇ ᴍʏ ꜰᴀᴛʜᴇʀ && ᴍᴏᴛʜᴇʀ !! ʟᴏʟ. \n\nʜᴇʀᴇ ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ \n\nꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏ ʜᴇʀᴇ .!!''',
+            text=f"ᴜᴍᴍ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴇ ᴍʏ ꜰᴀᴛʜᴇʀ && ᴍᴏᴛʜᴇʀ !! ʟᴏʟ. \n\nʜᴇʀᴇ ɪs ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ \n\nꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏ ʜᴇʀᴇ .!!",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -519,7 +528,7 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_asu":
         query.message.edit_text(
-            text=f"｢ ⏤͟͟͞͞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋʀɪᴘ↬✘「ʜʏρєя🇮🇳кιиɢ」✘𑲭𑲭 」\n"
+            text=f"⏤͟͟͞͞𖣔ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋʀɪᴘ↬✘「ʜʏρєя🇮🇳кιиɢ」✘𑲭𑲭"
                      f"𝙰𝚋𝚘𝚞𝚝 𝙼𝚢 𝙳𝚎𝚟♡︎"
                      f"𝙽𝚊𝚖𝚎:- 𝙷𝚢𝚙𝚎𝚛 𝙺𝚒𝚗𝚐✩"
                      f"𝙿𝚛𝚘𝚏𝚒𝚕𝚎:- [𝙲𝚘𝚘𝚕 𝙱𝚘𝚒☻︎](https://t.me/HYPER_AD17)"
@@ -545,7 +554,7 @@ def luna_about_callback(update, context):
 
     elif query.data == "luna_asi":
         query.message.edit_text(
-            text=f"｢ ★🇷ʏᴢᴇɴ➺☆「🇮🇳」ㅤㅤㅤㅤㅤ ㅤㅤㅤ ㅤㅤ ✪ 」\n"
+            text=f"🇷ʏᴢᴇɴ➺☆「🇮🇳」ㅤㅤㅤㅤㅤ ㅤㅤㅤ ㅤㅤ ✪ 」"
                      f"𝙰𝚋𝚘𝚞𝚝 𝙼𝚢 𝙳𝚎𝚟𝚕𝚘𝚙𝚎𝚛♡︎"
                      f"𝙽𝚊𝚖𝚎:- 🇷ʏᴢᴇɴ➺「🇮🇳」✩"
                      f"𝙿𝚛𝚘𝚏𝚒𝚕𝚎:- [𝙿𝚒𝚛𝚘 𝙱𝚘𝚒☻︎](https://t.me/HYPER_AD17)"
@@ -576,7 +585,7 @@ def luna_about_callback(update, context):
                 f"\n✪ If someone is spamming your group, you can use report feature from your Telegram Client."
                 f"\n✪ Make sure antiflood is enabled, so that users cannot flood/spam your chat."
                 f"\n✪ Do not spam commands, buttons, or anything in bot PM, else you will be Ignored by bot or Gbanned."
-                f"\n✪ If you need to ask anything about this bot or you need help, reach us at @ZZZZZZ"
+                f"\n✪ If you need to ask anything about this bot or you need help, reach us at @angelsupports"
                 f"\n✪ Make sure you read rules and follow them when you join Support Chat."
                 f"\n✪ Spamming in Support Chat, will reward you GBAN and reported to Telegram as well.\n"
                 f"\nTerms & Conditions can be changed anytime.",
@@ -621,7 +630,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. ɪ'ᴀᴍ Lᴜɴᴀ*
+            text=""" Hi.. ɪ'ᴀᴍ ᴀɴɢᴇʟ*
                  \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://t.me/THN_NETWORK) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
