@@ -100,7 +100,7 @@ buttons = [
 
 HELP_STRINGS = """
 **Main commands:**
-**✪ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ✪
+✪ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ✪
 ┏ /start
 ┃sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
 ┣/help
@@ -110,7 +110,7 @@ HELP_STRINGS = """
 ┗ /settings
 ╭─⊸➢ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs.
 🤍
-╰─⊸➢ᴊᴏɪɴ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ʀᴇᴘᴏʀᴛ ᴛʜᴇ ᴇʀʀᴏʀꜱ @angelsupports ™**[🎀](https://telegra.ph/file/a384a9a5d86c352a46f38.png)"""`
+╰─⊸➢ᴊᴏɪɴ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ʀᴇᴘᴏʀᴛ ᴛʜᴇ ᴇʀʀᴏʀꜱ @angelsupports ™**[🎀](https://telegra.ph/file/a384a9a5d86c352a46f38.png)
 """
 
 DONATE_STRING = """IF U WANT TO DONATE THEN JUST JOIN @angelsupports\nOr U can donate By just Clicking [Here](https://t.me/ThomasShebLYY),"""
