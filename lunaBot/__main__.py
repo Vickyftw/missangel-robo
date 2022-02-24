@@ -402,9 +402,7 @@ def luna_about_callback(update, context):
                 [
                     InlineKeyboardButton(text="🇮🇳-ᴢᴇɴ➺", callback_data="luna_asi"),
                     InlineKeyboardButton(text="🇮🇳-ʜʏᴘᴇʀ✰", callback_data="luna_asu"),
-                 
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
-                 ],
                 ],
              ),
         )
