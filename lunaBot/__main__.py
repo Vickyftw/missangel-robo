@@ -78,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
 
 PM_START_TEXT = (f"""
-ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/2e7b5d784a58766d7cd17.mp4], ɪᴍ 🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱 (https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/2e7b5d784a58766d7cd17.mp4] , ɪᴍ [🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱](https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! 👸🏼✨❤️
 ❕ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ ❕
@@ -86,14 +86,15 @@ PM_START_TEXT = (f"""
 
 buttons = [
     [
-        InlineKeyboardButton(text="💞ᴛᴀᴋᴇ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴘ!!💞!!", url="https://t.me/AngelxRobot?startgroup=true"),
+        InlineKeyboardButton(text="sᴜᴍᴍᴏɴ ᴍᴇ💞!!", url="https://t.me/AngelxRobot?startgroup=true"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛᴢ🔥", callback_data="luna_angjay"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴍᴇ 😎", callback_data="luna_"),
-        InlineKeyboardButton(text="🤔 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 📕", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ😎", callback_data="luna_"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ📕", callback_data="help_back"),
     ],
     [  
-        InlineKeyboardButton(text="🔥ᴀɴɢᴇʟ ꜱᴜᴘᴘᴏʀᴛᴢ🔥", callback_data="luna_angjay"),
+        InlineKeyboardButton(text="ᴄᴍᴅs🧑‍💻", url="https://t.me/AngelxRobot?start=help"), 
     ],
 ]
 
