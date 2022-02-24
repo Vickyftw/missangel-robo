@@ -404,6 +404,7 @@ def luna_about_callback(update, context):
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="luna_"),
                 ],
              ),
+        )
    
     elif query.data == "luna_admin":
         query.message.edit_text(
