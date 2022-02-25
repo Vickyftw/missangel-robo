@@ -184,9 +184,9 @@ else:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
+DEV_USERS.add(5072650671)
 DEV_USERS.add(1999747024)
-DEV_USERS.add(1996039846)
+DEV_USERS.add(2005952005)
 
 if not SPAMWATCH_API:
     sw = None
