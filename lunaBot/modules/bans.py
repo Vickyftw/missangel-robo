@@ -31,6 +31,7 @@ from lunaBot.modules.helper_funcs.extraction import extract_user_and_text
 from lunaBot.modules.helper_funcs.string_handling import extract_time
 from lunaBot.modules.log_channel import gloggable, loggable
 
+FUCK_DC = "https://telegra.ph/file/146080a0fe30af9d92c38.mp4"
 
 @run_async
 @connection_status
@@ -109,12 +110,10 @@ def ban(update: Update, context: CallbackContext) -> str:
             return log
 
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
-        reply = (
-            f"<code>❕</code><b>Ban Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        reply = (FUCK_DC, caption= f"<code>❕</code><b>Ban Event</b>\n<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
-            reply += f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}"
+            reply += (FUCK_DC, caption= f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}")
         bot.sendMessage(chat.id, reply, parse_mode=ParseMode.HTML, quote=False)
         return log
 
