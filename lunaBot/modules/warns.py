@@ -115,9 +115,8 @@ def warn(user: User,
                       f"<b>Reason:</b> {reason}\n"
                       f"<b>Counts:</b> <code>{num_warns}/{limit}</code>")
 
-    else:
-        return ""
-        '''keyboard = InlineKeyboardMarkup([[
+    '''else:
+        keyboard = InlineKeyboardMarkup([[
             InlineKeyboardButton(
                 "🔘 Remove warn", callback_data="rm_warn({})".format(user.id))
         ]])'''
