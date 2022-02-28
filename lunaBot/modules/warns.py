@@ -116,14 +116,10 @@ def warn(user: User,
                       f"<b>Counts:</b> <code>{num_warns}/{limit}</code>")
 
     else:
-        update.effective_message.reply_text(
-                "Smthing went wrong ig🤔.", parse_mode=ParseMode.HTML
-            )
-
-       '''keyboard = InlineKeyboardMarkup([[
+        keyboard = InlineKeyboardMarkup([[
             InlineKeyboardButton(
-                "🔘 Remove warn", callback_data="rm_warn({})".format(user.id))
-        ]])'''
+                "Support🔥", url="https://t.me/angelsupports")
+        ]])
 
         reply = (
             f"<code>❕</code><b>Warn Event</b>\n"
