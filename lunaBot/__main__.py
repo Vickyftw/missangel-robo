@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-START_LOGO = "https://telegra.ph/file/aa138c012e3bf75c13628.mp4"
+START_LOGO = "https://telegra.ph/file/75047169cc9e0f94c9b5e.mp4"
 
 PM_START_TEXT = """
 ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/2e7b5d784a58766d7cd17.mp4) , ɪᴍ [🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱](https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
@@ -434,7 +434,7 @@ def luna_about_callback(update, context):
        
     elif query.data == "luna_notes":
         query.message.edit_text(
-            text=f"ʜᴇʏ!, ɪ ᴀᴍ ᴅᴇᴠᴜ ʀᴏʙᴏᴛ\n\nᴄᴏɴᴛᴀɪɴɪɴɢ ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴏꜰ ᴍᴜsɪᴄ sʏsᴛᴇᴍ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ ʟᴀɢ ꜰʀᴇᴇ  ᴍᴜsɪᴄ\n\nsᴇᴇ  ʜᴇʀᴇ ʙᴇʟᴏᴡ ᴀᴅᴍɪɴ ɴᴅ ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs\nᴛᴏ ᴜsᴇ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ..!!",
+            text=f"ʜᴇʏ!, ɪ ᴀᴍ 🇲 🇮 🇸 🇸 🇦 🇳 🇬 🇪 🇱\n\nᴄᴏɴᴛᴀɪɴɪɴɢ ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴏꜰ ᴍᴜsɪᴄ sʏsᴛᴇᴍ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ ʟᴀɢ ꜰʀᴇᴇ  ᴍᴜsɪᴄ\n\nsᴇᴇ  ʜᴇʀᴇ ʙᴇʟᴏᴡ ᴀᴅᴍɪɴ ɴᴅ ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs\nᴛᴏ ᴜsᴇ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ..!!",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
