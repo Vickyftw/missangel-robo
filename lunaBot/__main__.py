@@ -78,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 START_LOGO = "https://telegra.ph/file/75047169cc9e0f94c9b5e.mp4"
 
 PM_START_TEXT = """
-ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/2e7b5d784a58766d7cd17.mp4) , ɪᴍ [🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱](https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/ddada9feb7199d801f215.jpg) , ɪᴍ [🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱](https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! 👸🏼✨❤️
 ❕ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ ❕
