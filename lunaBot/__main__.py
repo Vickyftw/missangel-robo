@@ -114,7 +114,7 @@ buttons = [
     ],
 ],"""
 
-LULLI = [
+'''LULLI = [
     [
         InlineKeyboardButton(text="[Tᴇᴀᴍ-Sɪʟᴇɴᴛ💞]", url="t.me/SILENT_DEVS"),
     ],
@@ -122,7 +122,7 @@ LULLI = [
         InlineKeyboardButton(text="♡︎Hᴇᴠᴇɴ♡︎", url="t.me/SILENT_DEVS"),
         InlineKeyboardButton(text="«Gᴏ•Bᴀᴄᴋ«", callback_data="help_back"),
     ],
-],
+],'''
 
 HELP_STRINGS = """
 ✪ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ✪
@@ -340,7 +340,17 @@ def help_button(update, context):
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup(LULLI),
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(text="[Tᴇᴀᴍ-Sɪʟᴇɴᴛ💞]", url="t.me/SILENT_DEVS"),
+                        ],
+                        [
+                            InlineKeyboardButton(text="♡︎Hᴇᴠᴇɴ♡︎", url="t.me/SILENT_DEVS"),
+                            InlineKeyboardButton(text="«Gᴏ•Bᴀᴄᴋ«", callback_data="help_back"),
+                        ],
+                    ],
+                 ),
             )
 
         elif prev_match:
