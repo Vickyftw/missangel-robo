@@ -75,10 +75,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-START_LOGO = "https://telegra.ph/file/75047169cc9e0f94c9b5e.mp4"
+ANGEL_LOGO = "https://telegra.ph/file/75047169cc9e0f94c9b5e.mp4"
 
 PM_START_TEXT = """
-ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[,](https://telegra.ph/file/ddada9feb7199d801f215.jpg) , ɪᴍ [🇲 🇮 🇸 🇸  🇦 🇳 🇬 🇪 🇱](https://t.me/AngelxRobot)  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[Aɴɢᴇʟ](https://t.me/AngelxRobot) ,ɪᴢ ʜᴇʀᴇ ɢᴜʏs\nᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! 👸🏼✨❤️
 ❕ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ ❕
@@ -98,20 +98,40 @@ buttons = [
     ],
 ]
 
+BSDKA = [
+    [
+        InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
+    ],
+    [
+        InlineKeyboardButton(text="Hᴇʟᴘ ❔", url="t.me/{}?start=help".format(context.bot.username),),
+        InlineKeyboardButton(text="Mᴜsɪᴄ♫︎", callback_data="luna_puqi"),
+    ],
+    [
+        InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
+    ],
+],
+
+LULLI = [
+    [
+        InlineKeyboardButton(text="[Tᴇᴀᴍ-Sɪʟᴇɴᴛ💞]", url="t.me/SILENT_DEVS"),
+    ],
+    [
+        InlineKeyboardButton(text="♡︎Hᴇᴠᴇɴ♡︎", url="t.me/SILENT_DEVS"),
+        InlineKeyboardButton(text="«Gᴏ•Bᴀᴄᴋ«", callback_data="help_back"),
+    ],
+],
 
 HELP_STRINGS = """
-**Main commands:**
 ✪ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ✪
 ┏ /start
 ┃sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
 ┣/help
 ┃ᴘᴍ's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
-┣ /help <module name>
-┃ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 ┗ /settings
 ╭─⊸➢ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs.
-🤍
 ╰─⊸➢ᴊᴏɪɴ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ʀᴇᴘᴏʀᴛ ᴛʜᴇ ᴇʀʀᴏʀꜱ @angelsupports ™**[🎀](https://telegra.ph/file/a384a9a5d86c352a46f38.png)
+
+➬➬ Pᴏᴡᴇʀᴇᴅ Bʏ Cᴏɴᴛʀᴏʟʟᴇʀ [Tᴇᴀᴍ-Sɪʟᴇɴᴛ💞](t.me/SILENT_DEVS) ✨
 """
 
 DONATE_STRING = """IF U WANT TO DONATE THEN JUST JOIN @angelsupports\nOr U can donate By just Clicking [Here](https://t.me/ThomasShebLYY),"""
@@ -220,12 +240,13 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
+                disable_web_page_preview=True
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
         update.effective_message.reply_video(
-            START_LOGO, caption= "☆ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@angelsupports".format(
+            ANGEL_LOGO, caption= "☆Mɪss <a href='https://t.me/AngelxRobot'>Aɴɢᴇʟ♡︎</a> ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@angelsupports".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -316,9 +337,7 @@ def help_button(update, context):
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
-                ),
+                reply_markup=InlineKeyboardMarkup(LULLI),
             )
 
         elif prev_match:
@@ -326,6 +345,7 @@ def help_button(update, context):
             query.message.edit_text(
                 text=HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(curr_page - 1, HELPABLE, "help")
                 ),
@@ -336,6 +356,7 @@ def help_button(update, context):
             query.message.edit_text(
                 text=HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(next_page + 1, HELPABLE, "help")
                 ),
@@ -676,19 +697,9 @@ def get_help(update: Update, context: CallbackContext):
             return
         update.effective_message.reply_text(
             "Contact me in PM to get the list of possible commands.",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="Hᴇʟᴘ ❔",
-                            url="t.me/{}?start=help".format(context.bot.username),
-                        )
-                    ],
-                    [
-                        InlineKeyboardButton(text="Oᴘᴇɴ Hᴇʀᴇ", callback_data="help_back"),
-                    ],
-                ],
-            ),
+            parse_mode=ParseMode.HTML,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(BSDKA),
         )
         return
 
