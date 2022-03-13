@@ -709,10 +709,10 @@ def get_help(update: Update, context: CallbackContext):
                             text="Hᴇʟᴘ ❔",
                             url="t.me/{}?start=help".format(context.bot.username),
                         ),
-                        InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
+                        InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
                     ],
                     [
-                        InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
+                        InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
                     ],
                 ],
             ),
