@@ -418,7 +418,7 @@ def luna_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=False,
+                disable_web_page_preview=True,
         )
 
     elif query.data == "luna_basichelp":
@@ -709,7 +709,7 @@ def get_help(update: Update, context: CallbackContext):
                             text="Hᴇʟᴘ ❔",
                             url="t.me/{}?start=help".format(context.bot.username),
                         ),
-                        InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
+                        InlineKeyboardButton(text="♡︎Aᴅᴅ-ᴍᴇ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
                     ],
                     [
                         InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
