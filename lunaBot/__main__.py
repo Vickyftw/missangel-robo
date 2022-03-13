@@ -103,7 +103,10 @@ BSDKA = [
         InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
     ],
     [
-        InlineKeyboardButton(text="Hᴇʟᴘ ❔", url="t.me/{}?start=help".format(context.bot.username),),
+        InlineKeyboardButton(
+                            text="Hᴇʟᴘ ❔",
+                            url="t.me/{}?start=help".format(context.bot.username),
+                        ),
         InlineKeyboardButton(text="Mᴜsɪᴄ♫︎", callback_data="luna_puqi"),
     ],
     [
