@@ -685,7 +685,7 @@ def get_help(update: Update, context: CallbackContext):
                         )
                     ],
                     [
-                        InlineKeyboardButton(text="Oᴘᴇɴ Hᴇʀᴇ", url="help_back"),
+                        InlineKeyboardButton(text="Oᴘᴇɴ Hᴇʀᴇ", callback_data="help_back"),
                     ],
                 ],
             ),
