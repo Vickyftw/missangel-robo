@@ -97,8 +97,8 @@ buttons = [
         InlineKeyboardButton(text="Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ💞!!", url="https://t.me/AngelxRobot?startgroup=true"),
     ],
 ]
-
-BSDKA = [
+"""
+#BSDKA = [
     [
         InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
     ],
@@ -112,7 +112,7 @@ BSDKA = [
     [
         InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
     ],
-],
+],"""
 
 LULLI = [
     [
@@ -702,7 +702,20 @@ def get_help(update: Update, context: CallbackContext):
             "Contact me in PM to get the list of possible commands.",
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(BSDKA),
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="Hᴇʟᴘ ❔",
+                            url="t.me/{}?start=help".format(context.bot.username),
+                        ),
+                        InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
+                    ],
+                ],
+            ),
         )
         return
 
