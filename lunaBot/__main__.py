@@ -240,7 +240,7 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                disable_web_page_preview=True
+                disable_web_page_preview=True,
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
