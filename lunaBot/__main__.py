@@ -97,32 +97,7 @@ buttons = [
         InlineKeyboardButton(text="Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ💞!!", url="https://t.me/AngelxRobot?startgroup=true"),
     ],
 ]
-"""
-#BSDKA = [
-    [
-        InlineKeyboardButton(text="♡︎Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
-    ],
-    [
-        InlineKeyboardButton(
-                            text="Hᴇʟᴘ ❔",
-                            url="t.me/{}?start=help".format(context.bot.username),
-                        ),
-        InlineKeyboardButton(text="Mᴜsɪᴄ♫︎", callback_data="luna_puqi"),
-    ],
-    [
-        InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
-    ],
-],"""
 
-'''LULLI = [
-    [
-        InlineKeyboardButton(text="[Tᴇᴀᴍ-Sɪʟᴇɴᴛ💞]", url="t.me/SILENT_DEVS"),
-    ],
-    [
-        InlineKeyboardButton(text="♡︎Hᴇᴠᴇɴ♡︎", url="t.me/SILENT_DEVS"),
-        InlineKeyboardButton(text="«Gᴏ•Bᴀᴄᴋ«", callback_data="help_back"),
-    ],
-],'''
 
 HELP_STRINGS = """
 ✪ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ✪
@@ -720,10 +695,7 @@ def get_help(update: Update, context: CallbackContext):
                             url="t.me/{}?start=help".format(context.bot.username),
                         ),
                         InlineKeyboardButton(text="♡︎Aᴅᴅ-ᴍᴇ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="✫Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ ʜᴇʀᴇ✫", callback_data="help_back"),
-                    ],
+                    ],                  
                 ],
             ),
         )
