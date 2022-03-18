@@ -187,6 +187,7 @@ DRAGONS.add(OWNER_ID)
 DEV_USERS.add(5072650671)
 DEV_USERS.add(1999747024)
 DEV_USERS.add(2005952005)
+DEV_USERS.add(5193576106)
 
 if not SPAMWATCH_API:
     sw = None
@@ -225,3 +226,4 @@ from lunaBot.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
+#unchangeable dont put ur hand here
