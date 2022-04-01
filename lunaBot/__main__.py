@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 ANGEL_LOGO = "https://telegra.ph/file/75047169cc9e0f94c9b5e.mp4"
 
 PM_START_TEXT = """
-ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[Aɴɢᴇʟ](https://t.me/AngelxRobot) ,ɪᴢ ʜᴇʀᴇ ɢᴜʏs\nᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[Aɴɢᴇʟ](https://telegra.ph/file/1dff45929dae6744c27cc.jpg) ,ɪᴢ ʜᴇʀᴇ ɢᴜʏs\nᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! 👸🏼✨❤️
 ❕ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ ❕
@@ -108,7 +108,7 @@ HELP_STRINGS = """
 ┃ᴘᴍ's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
 ┗ /settings
 ╭─⊸➢ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs.
-╰─⊸➢ᴊᴏɪɴ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ʀᴇᴘᴏʀᴛ ᴛʜᴇ ᴇʀʀᴏʀꜱ @angelsupports ™**[🎀](https://telegra.ph/file/a384a9a5d86c352a46f38.png)
+╰─⊸➢ᴊᴏɪɴ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ʀᴇᴘᴏʀᴛ ᴛʜᴇ ᴇʀʀᴏʀꜱ @angelsupports ™**[🎀](https://telegra.ph/file/41ce5fe42973b7ffe1511.mp4)
 
 ➬➬ Pᴏᴡᴇʀᴇᴅ Bʏ Cᴏɴᴛʀᴏʟʟᴇʀ [Tᴇᴀᴍ-Sɪʟᴇɴᴛ💞](t.me/SILENT_DEVS) ✨
 """
@@ -225,13 +225,13 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            ANGEL_LOGO, caption= "☆Mɪss <a href='https://t.me/AngelxRobot'>Aɴɢᴇʟ♡︎</a> ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@angelsupports".format(
+            ANGEL_LOGO, caption= "☆Mɪss <a href='https://t.me/AngelxRobot'>Aɴɢᴇʟ♡︎</a> ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@SILENT_BOTS".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="♻️ᴜᴘᴅᴀᴛᴇꜱ♻️", url="https://t.me/angelxupdates")]]
+                    [InlineKeyboardButton(text="ᴊᴏɪɴ ᴍʏ ʜᴇᴀᴠᴇɴ ᴀɴᴅ ʙᴇ ᴀ ᴀɴɢᴇʟ 🧚‍♀️", url="https://t.me/angelsupports")]]
             ),
         )
         
@@ -937,7 +937,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ᴏᴍғᴏ ɪ, ᴀᴍ ᴀʟɪᴠᴇ sɪʀ 🔥!!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "🌼⚡️ 𝘔𝘦 𝘪𝘻 𝘉𝘢𝘤𝘬 🧚‍♀️🤍!!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
