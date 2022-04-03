@@ -216,6 +216,7 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            update.effective_message.reply_sticker("CAACAgUAAx0CakLokwACQ_ZiSRw3BTHjqHh7ttVm_c0O-jcSuwACwwQAAlgqQVSg82qsgeab8iME")
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -224,6 +225,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
+        update.effective_message.reply_sticker("CAACAgUAAx0CakLokwACQ_ZiSRw3BTHjqHh7ttVm_c0O-jcSuwACwwQAAlgqQVSg82qsgeab8iME")
         update.effective_message.reply_video(
             ANGEL_LOGO, caption= "☆Mɪss <a href='https://t.me/AngelxRobot'>Aɴɢᴇʟ♡︎</a> ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@SILENT_BOTS".format(
                 uptime
