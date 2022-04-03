@@ -76,10 +76,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-ANGEL_LOGO = "https://telegra.ph/file/75047169cc9e0f94c9b5e.mp4"
+ANGEL_LOGO = "https://telegra.ph/file/2d1ea22954040d8baf57b.mp4"
 
 PM_START_TEXT = """
-ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[Aɴɢᴇʟ](https://telegra.ph/file/1dff45929dae6744c27cc.jpg) ,ɪᴢ ʜᴇʀᴇ ɢᴜʏs\nᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʏ ᴛʜᴇʀᴇ !🧚🏻‍[Aɴɢᴇʟ](https://telegra.ph/file/1dff45929dae6744c27cc.png) ,ɪᴢ ʜᴇʀᴇ ɢᴜʏs\nᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! 👸🏼✨❤️
 ❕ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ ❕
