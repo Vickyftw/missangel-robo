@@ -99,6 +99,15 @@ buttons = [
     ],
 ]
 
+SMTG_OR_WOT = [
+    [
+      InlineKeyboardButton(text="ᴊᴏɪɴ ᴍʏ ʜᴇᴀᴠᴇɴ ᴀɴᴅ ʙᴇ ᴀ ᴀɴɢᴇʟ🧚‍♀️", url='https://t.me/angelsupports'),
+    ],
+    [
+      InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url='t.me/SILENT_BOTS'),
+      InlineKeyboardButton(text="ᴄᴏᴏʟ-ᴋɪᴅᴅᴏ", url='tg://user?id=2005952005'),
+    ],
+]
 
 HELP_STRINGS = """
 ✪ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ✪
@@ -225,8 +234,8 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_sticker("CAACAgUAAx0CakLokwACQ_ZiSRw3BTHjqHh7ttVm_c0O-jcSuwACwwQAAlgqQVSg82qsgeab8iME")
-        update.effective_message.reply_video(
+        update.effective_message.reply_sticker("CAACAgUAAx0CakLokwACQ_ZiSRw3BTHjqHh7ttVm_c0O-jcSuwACwwQAAlgqQVSg82qsgeab8iME", parse_mode=ParseMode.HTML, reply_markup=InlineKeyboardMarkup(SMTG_OR_WOT))
+        '''update.effective_message.reply_video(
             ANGEL_LOGO, caption= "☆Mɪss <a href='https://t.me/AngelxRobot'>Aɴɢᴇʟ♡︎</a> ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@SILENT_BOTS".format(
                 uptime
             ),
@@ -235,7 +244,7 @@ def start(update: Update, context: CallbackContext):
                 [
                     [InlineKeyboardButton(text="ᴊᴏɪɴ ᴍʏ ʜᴇᴀᴠᴇɴ ᴀɴᴅ ʙᴇ ᴀ ᴀɴɢᴇʟ 🧚‍♀️", url="https://t.me/angelsupports")]]
             ),
-        )
+        )'''
         
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
@@ -694,10 +703,12 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Hᴇʟᴘ ❔",
+                            text="ᴏᴘᴇɴ ᴘʀɪᴠᴀᴛᴇ",
                             url="t.me/{}?start=help".format(context.bot.username),
                         ),
-                        InlineKeyboardButton(text="♡︎Aᴅᴅ-ᴍᴇ♡︎", url="https://t.me/AngelxRobot?startgroup=True"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ᴏᴘᴇɴ ʜᴇʀᴇ", callback_data="help_back"),
                     ],                  
                 ],
             ),
