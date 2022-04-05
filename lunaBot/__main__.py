@@ -101,7 +101,7 @@ buttons = [
 
 SMTG_OR_WOT = [
     [
-      InlineKeyboardButton(text="ᴊᴏɪɴ ᴍʏ ʜᴇᴀᴠᴇɴ ᴀɴᴅ ʙᴇ ᴀ ᴀɴɢᴇʟ🧚‍♀️", url='https://t.me/angelsupports'),
+      InlineKeyboardButton(text="ᴊᴏɪɴ ᴍʏ ʜᴇᴀᴠᴇɴ🧚‍♀️", url='https://t.me/angelsupports'),
     ],
     [
       InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url='t.me/SILENT_BOTS'),
@@ -234,7 +234,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_sticker("CAACAgUAAx0CakLokwACQ_ZiSRw3BTHjqHh7ttVm_c0O-jcSuwACwwQAAlgqQVSg82qsgeab8iME", parse_mode=ParseMode.HTML, reply_markup=InlineKeyboardMarkup(SMTG_OR_WOT))
+        update.effective_message.reply_sticker("CAACAgIAAx0CakLokwACR6hiS6zoWT-HAg_6qfANlmqyyPEpDQAC6RoAAr_lSUoGutMN4Hrc3yME", parse_mode=ParseMode.HTML, reply_markup=InlineKeyboardMarkup(SMTG_OR_WOT))
         '''update.effective_message.reply_video(
             ANGEL_LOGO, caption= "☆Mɪss <a href='https://t.me/AngelxRobot'>Aɴɢᴇʟ♡︎</a> ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!\n<b>☆ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ:</b> <code>{}</code>\n\nᴊᴏɪɴ >>@SILENT_BOTS".format(
                 uptime
